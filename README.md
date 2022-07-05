@@ -6,7 +6,7 @@
 **`SoundCloud` iOS AutoLayout**
 
 #### ▶︎ 실행화면
-<img src="title="auto gif" width="30%"/>
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/SoundCloud.gif"title="auto gif" width="30%"/>
 
 #### ▶︎ 회고
 
