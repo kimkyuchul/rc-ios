@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69325F91286ECE8A007FCD71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325F90286ECE8A007FCD71 /* AppDelegate.swift */; };
+		69325F93286ECE8A007FCD71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325F92286ECE8A007FCD71 /* SceneDelegate.swift */; };
+		69325F95286ECE8A007FCD71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325F94286ECE8A007FCD71 /* ViewController.swift */; };
+		69325F98286ECE8A007FCD71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69325F96286ECE8A007FCD71 /* Main.storyboard */; };
+		69325F9A286ECE8E007FCD71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69325F99286ECE8E007FCD71 /* Assets.xcassets */; };
+		69325F9D286ECE8E007FCD71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69325F9B286ECE8E007FCD71 /* LaunchScreen.storyboard */; };
+		69325FA9286ED928007FCD71 /* Stream.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69325FA8286ED928007FCD71 /* Stream.storyboard */; };
+		69325FAB286ED953007FCD71 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69325FAA286ED953007FCD71 /* Search.storyboard */; };
+		69325FAD286ED965007FCD71 /* Library.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69325FAC286ED965007FCD71 /* Library.storyboard */; };
+		69325FAF286EE227007FCD71 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FAE286EE227007FCD71 /* SearchViewController.swift */; };
+		69325FB1286EE25A007FCD71 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FB0286EE25A007FCD71 /* StreamViewController.swift */; };
+		69325FB3286EE271007FCD71 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FB2286EE271007FCD71 /* LibraryViewController.swift */; };
+		69325FB5286EE42B007FCD71 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FB4286EE42B007FCD71 /* TabBarViewController.swift */; };
+		69325FBC28735286007FCD71 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FBB28735286007FCD71 /* NavigationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69325F8D286ECE8A007FCD71 /* SoundCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69325F90286ECE8A007FCD71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69325F92286ECE8A007FCD71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		69325F94286ECE8A007FCD71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69325F97286ECE8A007FCD71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69325F99286ECE8E007FCD71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69325F9C286ECE8E007FCD71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69325F9E286ECE8E007FCD71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69325FA4286ECF44007FCD71 /* Interstate-Regular-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Interstate-Regular-Font.ttf"; path = "../../../../Downloads/Interstate-Regular-Font.ttf"; sourceTree = "<group>"; };
+		69325FA6286ED25B007FCD71 /* InterstatePlus Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "InterstatePlus Bold.ttf"; path = "../../../../Downloads/Interstate TT[1993 - Tobias Frere-Jones]/InterstatePlus Bold.ttf"; sourceTree = "<group>"; };
+		69325FA8286ED928007FCD71 /* Stream.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stream.storyboard; sourceTree = "<group>"; };
+		69325FAA286ED953007FCD71 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		69325FAC286ED965007FCD71 /* Library.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Library.storyboard; sourceTree = "<group>"; };
+		69325FAE286EE227007FCD71 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		69325FB0286EE25A007FCD71 /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		69325FB2286EE271007FCD71 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		69325FB4286EE42B007FCD71 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		69325FBB28735286007FCD71 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69325F8A286ECE8A007FCD71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69325F84286ECE8A007FCD71 = {
+			isa = PBXGroup;
+			children = (
+				69325F8F286ECE8A007FCD71 /* SoundCloud */,
+				69325F8E286ECE8A007FCD71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69325F8E286ECE8A007FCD71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69325F8D286ECE8A007FCD71 /* SoundCloud.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69325F8F286ECE8A007FCD71 /* SoundCloud */ = {
+			isa = PBXGroup;
+			children = (
+				69325F90286ECE8A007FCD71 /* AppDelegate.swift */,
+				69325F92286ECE8A007FCD71 /* SceneDelegate.swift */,
+				69325FB4286EE42B007FCD71 /* TabBarViewController.swift */,
+				69325FBB28735286007FCD71 /* NavigationViewController.swift */,
+				69325F94286ECE8A007FCD71 /* ViewController.swift */,
+				69325FAE286EE227007FCD71 /* SearchViewController.swift */,
+				69325FB0286EE25A007FCD71 /* StreamViewController.swift */,
+				69325FB2286EE271007FCD71 /* LibraryViewController.swift */,
+				69325F96286ECE8A007FCD71 /* Main.storyboard */,
+				69325FA8286ED928007FCD71 /* Stream.storyboard */,
+				69325FAA286ED953007FCD71 /* Search.storyboard */,
+				69325FAC286ED965007FCD71 /* Library.storyboard */,
+				69325F99286ECE8E007FCD71 /* Assets.xcassets */,
+				69325F9B286ECE8E007FCD71 /* LaunchScreen.storyboard */,
+				69325F9E286ECE8E007FCD71 /* Info.plist */,
+				69325FA4286ECF44007FCD71 /* Interstate-Regular-Font.ttf */,
+				69325FA6286ED25B007FCD71 /* InterstatePlus Bold.ttf */,
+			);
+			path = SoundCloud;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69325F8C286ECE8A007FCD71 /* SoundCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69325FA1286ECE8E007FCD71 /* Build configuration list for PBXNativeTarget "SoundCloud" */;
+			buildPhases = (
+				69325F89286ECE8A007FCD71 /* Sources */,
+				69325F8A286ECE8A007FCD71 /* Frameworks */,
+				69325F8B286ECE8A007FCD71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundCloud;
+			productName = SoundCloud;
+			productReference = 69325F8D286ECE8A007FCD71 /* SoundCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69325F85286ECE8A007FCD71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					69325F8C286ECE8A007FCD71 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 69325F88286ECE8A007FCD71 /* Build configuration list for PBXProject "SoundCloud" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69325F84286ECE8A007FCD71;
+			productRefGroup = 69325F8E286ECE8A007FCD71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69325F8C286ECE8A007FCD71 /* SoundCloud */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69325F8B286ECE8A007FCD71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69325F9D286ECE8E007FCD71 /* LaunchScreen.storyboard in Resources */,
+				69325F9A286ECE8E007FCD71 /* Assets.xcassets in Resources */,
+				69325F98286ECE8A007FCD71 /* Main.storyboard in Resources */,
+				69325FAB286ED953007FCD71 /* Search.storyboard in Resources */,
+				69325FA9286ED928007FCD71 /* Stream.storyboard in Resources */,
+				69325FAD286ED965007FCD71 /* Library.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69325F89286ECE8A007FCD71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69325FBC28735286007FCD71 /* NavigationViewController.swift in Sources */,
+				69325FB1286EE25A007FCD71 /* StreamViewController.swift in Sources */,
+				69325F95286ECE8A007FCD71 /* ViewController.swift in Sources */,
+				69325F91286ECE8A007FCD71 /* AppDelegate.swift in Sources */,
+				69325FAF286EE227007FCD71 /* SearchViewController.swift in Sources */,
+				69325FB5286EE42B007FCD71 /* TabBarViewController.swift in Sources */,
+				69325FB3286EE271007FCD71 /* LibraryViewController.swift in Sources */,
+				69325F93286ECE8A007FCD71 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69325F96286ECE8A007FCD71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69325F97286ECE8A007FCD71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69325F9B286ECE8E007FCD71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69325F9C286ECE8E007FCD71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69325F9F286ECE8E007FCD71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69325FA0286ECE8E007FCD71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69325FA2286ECE8E007FCD71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LJ2P85FNV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoundCloud/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SoundCloud;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learnSwift.SoundCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69325FA3286ECE8E007FCD71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LJ2P85FNV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoundCloud/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SoundCloud;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learnSwift.SoundCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69325F88286ECE8A007FCD71 /* Build configuration list for PBXProject "SoundCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69325F9F286ECE8E007FCD71 /* Debug */,
+				69325FA0286ECE8E007FCD71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69325FA1286ECE8E007FCD71 /* Build configuration list for PBXNativeTarget "SoundCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69325FA2286ECE8E007FCD71 /* Debug */,
+				69325FA3286ECE8E007FCD71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69325F85286ECE8A007FCD71 /* Project object */;
+}

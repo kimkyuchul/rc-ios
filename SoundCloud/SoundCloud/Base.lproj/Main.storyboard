@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V4P-zM-hhB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Interstate-Regular-Font.ttf">
+            <string>Interstate-Regular</string>
+        </array>
+        <array key="InterstatePlus Bold.ttf">
+            <string>InterstatePlus-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="SoundCloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="RAi-oL-1J9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgF-Yk-jFM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gOf-pr-P5W">
+                                                <rect key="frame" x="10" y="160" width="389" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More of what you like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUp-YB-3Kf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="389" height="24.5"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestions based on what you've liked or played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lah-nV-cFc">
+                                                        <rect key="frame" x="0.0" y="32.5" width="389" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15.5"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dyf-Rk-R3n">
+                                                <rect key="frame" x="10" y="225" width="379" height="227"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="xkx-cT-Txa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="227"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoreLikeTrack1" translatesAutoresizingMaskIntoConstraints="NO" id="IwQ-mB-reB">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="180"/>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="k09-ui-FvB">
+                                                                <rect key="frame" x="0.0" y="194" width="103.5" height="33"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SODA (Demo)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdf-OV-jzu">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMk-9Q-grk">
+                                                                        <rect key="frame" x="0.0" y="18" width="103.5" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="k09-ui-FvB" firstAttribute="top" secondItem="IwQ-mB-reB" secondAttribute="bottom" constant="14" id="4x4-Q1-8Kd"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pgi-Ir-vOy">
+                                                        <rect key="frame" x="199.5" y="0.0" width="179.5" height="227"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoreLikeTrack2" translatesAutoresizingMaskIntoConstraints="NO" id="6IZ-mr-I0Q">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="180"/>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="DRN-Gm-2Kg">
+                                                                <rect key="frame" x="0.0" y="194" width="103.5" height="33"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monet (Demo)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PK-Fb-OaW">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeU-c0-pIo">
+                                                                        <rect key="frame" x="0.0" y="18" width="103.5" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="DRN-Gm-2Kg" firstAttribute="top" secondItem="6IZ-mr-I0Q" secondAttribute="bottom" constant="14" id="r2c-bd-4IZ"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fn3-qk-3zm">
+                                                <rect key="frame" x="10" y="502" width="248" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Upload" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov7-NK-yA1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="248" height="24.5"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newly posted tracks. Just for you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-dF-dzW">
+                                                        <rect key="frame" x="0.0" y="32.5" width="248" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15.5"/>
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zg1-V3-VhG">
+                                                <rect key="frame" x="2" y="567" width="390" height="385"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UploadImage" translatesAutoresizingMaskIntoConstraints="NO" id="cM5-Db-sNI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="385"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="8t0-5w-Gct">
+                                                <rect key="frame" x="0.0" y="946" width="273" height="54"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6IJ-zi-lfv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="54"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xl6-Yk-2HP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="66" height="54"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="스크린샷 2022-07-05 오후 3.37."/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="603-EB-P8O">
+                                                        <rect key="frame" x="58" y="0.0" width="215" height="54"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Based on your listening history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBm-pR-PYW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="215" height="54"/>
+                                                                <fontDescription key="fontDescription" name="Interstate-Regular" family="Interstate" pointSize="15"/>
+                                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1rM-5V-YdE">
+                                                <rect key="frame" x="10" y="1050" width="188" height="24.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJ7-6d-k3t">
+                                                        <rect key="frame" x="0.0" y="0.0" width="188" height="24.5"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pIF-Oh-8f2">
+                                                <rect key="frame" x="10" y="1091.5" width="379" height="207"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="keK-nW-flh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="207"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Recently Played" translatesAutoresizingMaskIntoConstraints="NO" id="73U-p5-APr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="180"/>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vfc-xr-N5n">
+                                                                <rect key="frame" x="0.0" y="192" width="78" height="15"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEENZiNO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zol-zv-p1e">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="78" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="vfc-xr-N5n" firstAttribute="top" secondItem="73U-p5-APr" secondAttribute="bottom" constant="12" id="MzG-as-pNT"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ewR-tG-VkJ">
+                                                        <rect key="frame" x="199.5" y="0.0" width="179.5" height="207"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Recently Played1" translatesAutoresizingMaskIntoConstraints="NO" id="R2t-7T-HPK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="180"/>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TXx-Fi-F3y">
+                                                                <rect key="frame" x="0.0" y="186" width="34" height="21"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="slom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CM5-o3-dlU">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="34" height="21"/>
+                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="TXx-Fi-F3y" firstAttribute="top" secondItem="R2t-7T-HPK" secondAttribute="bottom" constant="6" id="5nr-Hv-7Q6"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fDq-SA-EGW">
+                                                <rect key="frame" x="10" y="1348.5" width="359" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charts: Top 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODW-iW-Wkb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="24.5"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The most played tracks on SoundCloud this week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3a-SJ-fsb">
+                                                        <rect key="frame" x="0.0" y="32.5" width="359" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15.5"/>
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lTU-x9-VIb">
+                                                <rect key="frame" x="10" y="1413.5" width="379" height="227"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Cks-Ab-59x">
+                                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="227"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top50" translatesAutoresizingMaskIntoConstraints="NO" id="9ck-ua-P93">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="180"/>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cTP-04-hdZ">
+                                                                <rect key="frame" x="0.0" y="194" width="118.5" height="33"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All music genres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJC-GN-9Nh">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLh-aV-F25">
+                                                                        <rect key="frame" x="0.0" y="18" width="118.5" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="cTP-04-hdZ" firstAttribute="top" secondItem="9ck-ua-P93" secondAttribute="bottom" constant="14" id="XUN-CP-NiJ"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="NdB-9p-S01">
+                                                        <rect key="frame" x="199.5" y="0.0" width="179.5" height="227"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top50_1" translatesAutoresizingMaskIntoConstraints="NO" id="0Cl-Qb-bzz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="180"/>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="XIn-Ni-MJh">
+                                                                <rect key="frame" x="0.0" y="194" width="90" height="33"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Global Beats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYE-b2-8Da">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8e-rp-50J">
+                                                                        <rect key="frame" x="0.0" y="18" width="90" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="XIn-Ni-MJh" firstAttribute="top" secondItem="0Cl-Qb-bzz" secondAttribute="bottom" constant="14" id="rqy-Bi-GMb"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xxO-tp-rb5">
+                                                <rect key="frame" x="10" y="1690.5" width="305" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists You Should Follow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwS-NE-W39">
+                                                        <rect key="frame" x="0.0" y="0.0" width="305" height="24.5"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Based on your listening history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nF6-NB-f7n">
+                                                        <rect key="frame" x="0.0" y="32.5" width="305" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15.5"/>
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wLQ-89-x9Q">
+                                                <rect key="frame" x="10" y="1755.5" width="390" height="200"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zW0-YS-qrv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="200"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="H15-hc-h3P">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="145"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artists" translatesAutoresizingMaskIntoConstraints="NO" id="7o9-oz-D1d">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                                    </imageView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KPh-vE-NyA">
+                                                                        <rect key="frame" x="25" y="130" width="70.5" height="15"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black Nut" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llN-8i-HbC">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="KPh-vE-NyA" firstAttribute="top" secondItem="7o9-oz-D1d" secondAttribute="bottom" constant="10" id="ODd-NK-bVC"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YAo-4s-FyM">
+                                                                <rect key="frame" x="15" y="160" width="90" height="40"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXd-sJ-xWk">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Follow">
+                                                                            <fontDescription key="titleFontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        </buttonConfiguration>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="S0y-rW-TGh"/>
+                                                                    <constraint firstAttribute="width" constant="90" id="VkL-Km-UHF"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kqo-ox-gKw">
+                                                        <rect key="frame" x="135" y="0.0" width="120" height="200"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F2b-st-9aA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="145"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artists2" translatesAutoresizingMaskIntoConstraints="NO" id="h2u-b5-tvp">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                                    </imageView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TST-nu-Vyo">
+                                                                        <rect key="frame" x="41.5" y="130" width="37" height="15"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PH-1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyg-qL-u5a">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="37" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="TST-nu-Vyo" firstAttribute="top" secondItem="h2u-b5-tvp" secondAttribute="bottom" constant="10" id="h56-RG-syT"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4iz-X6-04I">
+                                                                <rect key="frame" x="15" y="160" width="90" height="40"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEg-uC-9kt">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="3LB-dw-t2q"/>
+                                                                            <constraint firstAttribute="width" constant="90" id="k9m-YE-ihE"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Follow">
+                                                                            <fontDescription key="titleFontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                        </buttonConfiguration>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-nA-93l">
+                                                        <rect key="frame" x="270" y="0.0" width="120" height="200"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KCR-aj-Nn4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="145"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artists3" translatesAutoresizingMaskIntoConstraints="NO" id="MMN-fQ-GYo">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                                    </imageView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wup-Kd-aYU">
+                                                                        <rect key="frame" x="27" y="130" width="66.5" height="15"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zior Park" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUQ-va-E3X">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="66.5" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="Wup-Kd-aYU" firstAttribute="top" secondItem="MMN-fQ-GYo" secondAttribute="bottom" constant="10" id="GgJ-da-MZg"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqE-W3-URJ">
+                                                                <rect key="frame" x="15" y="160" width="90" height="40"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="90" id="is4-hu-WGL"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="pk8-Zc-KXa"/>
+                                                                </constraints>
+                                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Follow">
+                                                                    <fontDescription key="titleFontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstItem="gOf-pr-P5W" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" constant="10" id="0sX-fO-Oem"/>
+                                            <constraint firstItem="Zg1-V3-VhG" firstAttribute="top" secondItem="fn3-qk-3zm" secondAttribute="bottom" constant="17" id="5Hn-Qf-Wda"/>
+                                            <constraint firstAttribute="trailing" secondItem="wLQ-89-x9Q" secondAttribute="trailing" constant="14" id="6Ph-bS-NFD"/>
+                                            <constraint firstAttribute="trailing" secondItem="gOf-pr-P5W" secondAttribute="trailing" constant="15" id="9Os-zo-0XW"/>
+                                            <constraint firstItem="xxO-tp-rb5" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" constant="10" id="Bsy-7G-x90"/>
+                                            <constraint firstItem="gOf-pr-P5W" firstAttribute="top" secondItem="rgF-Yk-jFM" secondAttribute="top" constant="160" id="C6v-L1-YBa"/>
+                                            <constraint firstItem="pIF-Oh-8f2" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" constant="10" id="Cfy-pn-Z5E"/>
+                                            <constraint firstItem="pIF-Oh-8f2" firstAttribute="top" secondItem="jJ7-6d-k3t" secondAttribute="bottom" constant="17" id="D46-mp-hYo"/>
+                                            <constraint firstItem="fn3-qk-3zm" firstAttribute="top" secondItem="dyf-Rk-R3n" secondAttribute="bottom" constant="50" id="H9j-oD-e9C"/>
+                                            <constraint firstItem="Zg1-V3-VhG" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" constant="2" id="HjL-Np-CG9"/>
+                                            <constraint firstItem="fDq-SA-EGW" firstAttribute="top" secondItem="pIF-Oh-8f2" secondAttribute="bottom" constant="50" id="LO0-kJ-jcZ"/>
+                                            <constraint firstItem="jJ7-6d-k3t" firstAttribute="top" secondItem="8t0-5w-Gct" secondAttribute="bottom" constant="50" id="Lvc-Hi-RmS"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zg1-V3-VhG" secondAttribute="trailing" constant="22" id="NNl-YY-SCy"/>
+                                            <constraint firstItem="wLQ-89-x9Q" firstAttribute="top" secondItem="xxO-tp-rb5" secondAttribute="bottom" constant="17" id="SHy-Sp-8Ku"/>
+                                            <constraint firstItem="8t0-5w-Gct" firstAttribute="top" secondItem="cM5-Db-sNI" secondAttribute="bottom" constant="-6" id="VkX-hG-RWy"/>
+                                            <constraint firstItem="dyf-Rk-R3n" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" constant="10" id="WSJ-up-CRP"/>
+                                            <constraint firstAttribute="trailing" secondItem="dyf-Rk-R3n" secondAttribute="trailing" constant="25" id="Z1O-Rv-lUk"/>
+                                            <constraint firstAttribute="height" constant="2100" id="a8H-Fq-HQt"/>
+                                            <constraint firstAttribute="trailing" secondItem="lTU-x9-VIb" secondAttribute="trailing" constant="25" id="cKl-oy-dxm"/>
+                                            <constraint firstItem="fDq-SA-EGW" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" constant="10" id="cqv-ST-Mcp"/>
+                                            <constraint firstItem="8t0-5w-Gct" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" id="dh2-hx-1yi"/>
+                                            <constraint firstAttribute="trailing" secondItem="pIF-Oh-8f2" secondAttribute="trailing" constant="25" id="jls-sX-Gcd"/>
+                                            <constraint firstItem="1rM-5V-YdE" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" constant="10" id="jyR-ZU-3UQ"/>
+                                            <constraint firstItem="xxO-tp-rb5" firstAttribute="top" secondItem="lTU-x9-VIb" secondAttribute="bottom" constant="50" id="kCH-iV-R5x"/>
+                                            <constraint firstItem="dyf-Rk-R3n" firstAttribute="top" secondItem="gOf-pr-P5W" secondAttribute="bottom" constant="17" id="nrO-qY-0ir"/>
+                                            <constraint firstItem="wLQ-89-x9Q" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" constant="10" id="pMz-to-lU9"/>
+                                            <constraint firstItem="lTU-x9-VIb" firstAttribute="top" secondItem="fDq-SA-EGW" secondAttribute="bottom" constant="17" id="sfC-ID-nmO"/>
+                                            <constraint firstItem="lTU-x9-VIb" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" constant="10" id="yKG-bd-gYa"/>
+                                            <constraint firstItem="fn3-qk-3zm" firstAttribute="leading" secondItem="rgF-Yk-jFM" secondAttribute="leading" constant="10" id="zkU-bq-WdQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rgF-Yk-jFM" firstAttribute="width" secondItem="6CP-eY-bJf" secondAttribute="width" id="0R3-Rp-4Sh"/>
+                                    <constraint firstItem="rgF-Yk-jFM" firstAttribute="trailing" secondItem="S7g-k7-f08" secondAttribute="trailing" id="5pr-zw-mMM"/>
+                                    <constraint firstItem="rgF-Yk-jFM" firstAttribute="bottom" secondItem="S7g-k7-f08" secondAttribute="bottom" id="Psr-os-psH"/>
+                                    <constraint firstItem="rgF-Yk-jFM" firstAttribute="leading" secondItem="S7g-k7-f08" secondAttribute="leading" id="RNo-Vu-mlc"/>
+                                    <constraint firstItem="rgF-Yk-jFM" firstAttribute="top" secondItem="S7g-k7-f08" secondAttribute="top" id="SSM-2Q-Cop"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="S7g-k7-f08"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="6CP-eY-bJf"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RAi-oL-1J9" secondAttribute="bottom" id="ABy-Eb-sFj"/>
+                            <constraint firstItem="RAi-oL-1J9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KwQ-Da-Yoe"/>
+                            <constraint firstItem="RAi-oL-1J9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PcA-6C-X9m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RAi-oL-1J9" secondAttribute="trailing" id="oLI-tc-Qwo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="imd-v7-ixd">
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" id="5ft-09-j43">
+                                <imageReference key="image" image="bell" catalog="system" symbolScale="large"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="fox-lB-sr4">
+                                <imageReference key="image" image="arrow.up.circle" catalog="system" symbolScale="large"/>
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="XGP-aN-R2v">
+                                    <rect key="frame" x="299" y="5" width="50.5" height="34"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" imagePadding="0.0" buttonSize="small">
+                                        <imageReference key="image" image="arrow.up.circle" catalog="system" symbolScale="large"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="large"/>
+                                        <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                </button>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="followButton" destination="eEg-uC-9kt" id="rzn-4K-MoK"/>
+                        <outlet property="followButton1" destination="dXd-sJ-xWk" id="QyQ-5N-NlZ"/>
+                        <outlet property="followButton2" destination="tqE-W3-URJ" id="vsB-xp-gU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960.8695652173915" y="20.758928571428569"/>
+        </scene>
+        <!--Stream-->
+        <scene sceneID="7U7-wg-fH0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Stream" referencedIdentifier="Stream" id="Cav-4T-GFO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="VxV-A4-VWS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rj8-UK-HPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="650"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="quL-DZ-9fe">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Search" storyboardName="Search" id="ypY-Db-lHG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vbF-Ex-fee"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CmW-na-SQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="658"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="bot-oC-6Je">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Library" storyboardName="Library" id="mer-VG-0Q5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="smf-OM-P1A"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gl7-3K-gby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="650"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="oBh-lK-Zjh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="V4P-zM-hhB" customClass="TabBarViewController" customModule="SoundCloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="dYz-Cy-EXG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarAppearance>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="s5T-uy-kyl" kind="relationship" relationship="viewControllers" id="Zlc-ln-lIp"/>
+                        <segue destination="Cav-4T-GFO" kind="relationship" relationship="viewControllers" id="xyd-Kw-m6p"/>
+                        <segue destination="ypY-Db-lHG" kind="relationship" relationship="viewControllers" id="toK-EV-Hxt"/>
+                        <segue destination="mer-VG-0Q5" kind="relationship" relationship="viewControllers" id="ABC-BH-icV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6l-gb-yUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="21.428571428571427"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="SIk-dr-srf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s5T-uy-kyl" customClass="NavigationViewController" customModule="SoundCloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="HomeTab" selectedImage="HomeTab" id="Iwo-8R-QE2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="VSu-3j-csx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gyg-mU-eMc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbQ-M5-nFO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Artists" width="120" height="120"/>
+        <image name="Artists2" width="120" height="120"/>
+        <image name="Artists3" width="120" height="120"/>
+        <image name="HomeTab" width="35" height="35"/>
+        <image name="MoreLikeTrack1" width="180" height="180"/>
+        <image name="MoreLikeTrack2" width="180" height="180"/>
+        <image name="Recently Played" width="180" height="180"/>
+        <image name="Recently Played1" width="180" height="180"/>
+        <image name="Top50" width="180" height="180"/>
+        <image name="Top50_1" width="180" height="180"/>
+        <image name="UploadImage" width="386" height="385"/>
+        <image name="arrow.up.circle" catalog="system" width="128" height="121"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="스크린샷 2022-07-05 오후 3.37." width="42" height="40"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
