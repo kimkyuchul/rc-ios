@@ -16,7 +16,8 @@
 - navigation bar 스크롤 시 Large title 변경되는 것을 구현 참고 (https://ios-development.tistory.com/516)
 - statusbar 색상 변경(https://www.ioscreator.com/tutorials/change-color-status-bar-ios-tutorial)
                                       
-코드로 ui 짜는 연습이 시급한 것 같다..
+가로 스크롤 뷰와 동적으로 늘어나는 스크롤뷰 구현 연습이 필요하다.
+가장 중요한 점은 코드로 ui 짜는 연습이 시급한 것 같다..
 
 
 
