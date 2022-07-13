@@ -18,6 +18,9 @@
 		69325FB3286EE271007FCD71 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FB2286EE271007FCD71 /* LibraryViewController.swift */; };
 		69325FB5286EE42B007FCD71 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FB4286EE42B007FCD71 /* TabBarViewController.swift */; };
 		69325FBC28735286007FCD71 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FBB28735286007FCD71 /* NavigationViewController.swift */; };
+		69A1B7BD287EC2A700866ECC /* SearchNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1B7BC287EC2A700866ECC /* SearchNavigationController.swift */; };
+		69A1B7BF287EC31000866ECC /* Interstate-Regular-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A1B7BE287EC30C00866ECC /* Interstate-Regular-Font.ttf */; };
+		69A1B7C1287EC32900866ECC /* InterstatePlus Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A1B7C0287EC32700866ECC /* InterstatePlus Black.ttf */; };
 		69AA115A287D66D500F093E7 /* StreamNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AA1157287D66D500F093E7 /* StreamNavigationController.swift */; };
 		69AA115B287D66D500F093E7 /* Stream.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AA1158287D66D500F093E7 /* Stream.storyboard */; };
 		69AA115C287D66D500F093E7 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AA1159287D66D500F093E7 /* StreamViewController.swift */; };
@@ -34,14 +37,15 @@
 		69325F99286ECE8E007FCD71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69325F9C286ECE8E007FCD71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69325F9E286ECE8E007FCD71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69325FA4286ECF44007FCD71 /* Interstate-Regular-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Interstate-Regular-Font.ttf"; path = "../../../../Downloads/Interstate-Regular-Font.ttf"; sourceTree = "<group>"; };
-		69325FA6286ED25B007FCD71 /* InterstatePlus Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "InterstatePlus Bold.ttf"; path = "../../../../Downloads/Interstate TT[1993 - Tobias Frere-Jones]/InterstatePlus Bold.ttf"; sourceTree = "<group>"; };
 		69325FAA286ED953007FCD71 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		69325FAC286ED965007FCD71 /* Library.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Library.storyboard; sourceTree = "<group>"; };
 		69325FAE286EE227007FCD71 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		69325FB2286EE271007FCD71 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		69325FB4286EE42B007FCD71 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		69325FBB28735286007FCD71 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		69A1B7BC287EC2A700866ECC /* SearchNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationController.swift; sourceTree = "<group>"; };
+		69A1B7BE287EC30C00866ECC /* Interstate-Regular-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Interstate-Regular-Font.ttf"; sourceTree = "<group>"; };
+		69A1B7C0287EC32700866ECC /* InterstatePlus Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterstatePlus Black.ttf"; sourceTree = "<group>"; };
 		69AA1157287D66D500F093E7 /* StreamNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamNavigationController.swift; sourceTree = "<group>"; };
 		69AA1158287D66D500F093E7 /* Stream.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stream.storyboard; sourceTree = "<group>"; };
 		69AA1159287D66D500F093E7 /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 				69325F92286ECE8A007FCD71 /* SceneDelegate.swift */,
 				69325FB4286EE42B007FCD71 /* TabBarViewController.swift */,
 				69325FAE286EE227007FCD71 /* SearchViewController.swift */,
+				69A1B7BC287EC2A700866ECC /* SearchNavigationController.swift */,
 				69325FB2286EE271007FCD71 /* LibraryViewController.swift */,
 				69C31EAF287D64980047F486 /* LibraryNavigationController.swift */,
 				69A1B7B7287E901E00866ECC /* New Group */,
@@ -93,8 +98,8 @@
 				69325F99286ECE8E007FCD71 /* Assets.xcassets */,
 				69325F9B286ECE8E007FCD71 /* LaunchScreen.storyboard */,
 				69325F9E286ECE8E007FCD71 /* Info.plist */,
-				69325FA4286ECF44007FCD71 /* Interstate-Regular-Font.ttf */,
-				69325FA6286ED25B007FCD71 /* InterstatePlus Bold.ttf */,
+				69A1B7BE287EC30C00866ECC /* Interstate-Regular-Font.ttf */,
+				69A1B7C0287EC32700866ECC /* InterstatePlus Black.ttf */,
 			);
 			path = SoundCloud;
 			sourceTree = "<group>";
@@ -167,8 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A1B7C1287EC32900866ECC /* InterstatePlus Black.ttf in Resources */,
 				69325F9D286ECE8E007FCD71 /* LaunchScreen.storyboard in Resources */,
 				69325F9A286ECE8E007FCD71 /* Assets.xcassets in Resources */,
+				69A1B7BF287EC31000866ECC /* Interstate-Regular-Font.ttf in Resources */,
 				69325F98286ECE8A007FCD71 /* Main.storyboard in Resources */,
 				69AA115B287D66D500F093E7 /* Stream.storyboard in Resources */,
 				69325FAB286ED953007FCD71 /* Search.storyboard in Resources */,
@@ -193,6 +200,7 @@
 				69C31EB0287D64980047F486 /* LibraryNavigationController.swift in Sources */,
 				69325FB3286EE271007FCD71 /* LibraryViewController.swift in Sources */,
 				69325F93286ECE8A007FCD71 /* SceneDelegate.swift in Sources */,
+				69A1B7BD287EC2A700866ECC /* SearchNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
