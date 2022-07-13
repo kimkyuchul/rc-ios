@@ -13,14 +13,16 @@
 		69325F98286ECE8A007FCD71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69325F96286ECE8A007FCD71 /* Main.storyboard */; };
 		69325F9A286ECE8E007FCD71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69325F99286ECE8E007FCD71 /* Assets.xcassets */; };
 		69325F9D286ECE8E007FCD71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69325F9B286ECE8E007FCD71 /* LaunchScreen.storyboard */; };
-		69325FA9286ED928007FCD71 /* Stream.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69325FA8286ED928007FCD71 /* Stream.storyboard */; };
 		69325FAB286ED953007FCD71 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69325FAA286ED953007FCD71 /* Search.storyboard */; };
 		69325FAD286ED965007FCD71 /* Library.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69325FAC286ED965007FCD71 /* Library.storyboard */; };
-		69325FAF286EE227007FCD71 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FAE286EE227007FCD71 /* SearchViewController.swift */; };
-		69325FB1286EE25A007FCD71 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FB0286EE25A007FCD71 /* StreamViewController.swift */; };
 		69325FB3286EE271007FCD71 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FB2286EE271007FCD71 /* LibraryViewController.swift */; };
 		69325FB5286EE42B007FCD71 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FB4286EE42B007FCD71 /* TabBarViewController.swift */; };
 		69325FBC28735286007FCD71 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FBB28735286007FCD71 /* NavigationViewController.swift */; };
+		69AA115A287D66D500F093E7 /* StreamNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AA1157287D66D500F093E7 /* StreamNavigationController.swift */; };
+		69AA115B287D66D500F093E7 /* Stream.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AA1158287D66D500F093E7 /* Stream.storyboard */; };
+		69AA115C287D66D500F093E7 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AA1159287D66D500F093E7 /* StreamViewController.swift */; };
+		69AA115D287D6B4B00F093E7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69325FAE286EE227007FCD71 /* SearchViewController.swift */; };
+		69C31EB0287D64980047F486 /* LibraryNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C31EAF287D64980047F486 /* LibraryNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +36,16 @@
 		69325F9E286ECE8E007FCD71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69325FA4286ECF44007FCD71 /* Interstate-Regular-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Interstate-Regular-Font.ttf"; path = "../../../../Downloads/Interstate-Regular-Font.ttf"; sourceTree = "<group>"; };
 		69325FA6286ED25B007FCD71 /* InterstatePlus Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "InterstatePlus Bold.ttf"; path = "../../../../Downloads/Interstate TT[1993 - Tobias Frere-Jones]/InterstatePlus Bold.ttf"; sourceTree = "<group>"; };
-		69325FA8286ED928007FCD71 /* Stream.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stream.storyboard; sourceTree = "<group>"; };
 		69325FAA286ED953007FCD71 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		69325FAC286ED965007FCD71 /* Library.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Library.storyboard; sourceTree = "<group>"; };
 		69325FAE286EE227007FCD71 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		69325FB0286EE25A007FCD71 /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
 		69325FB2286EE271007FCD71 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		69325FB4286EE42B007FCD71 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		69325FBB28735286007FCD71 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		69AA1157287D66D500F093E7 /* StreamNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamNavigationController.swift; sourceTree = "<group>"; };
+		69AA1158287D66D500F093E7 /* Stream.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stream.storyboard; sourceTree = "<group>"; };
+		69AA1159287D66D500F093E7 /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		69C31EAF287D64980047F486 /* LibraryNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,15 +81,15 @@
 				69325F90286ECE8A007FCD71 /* AppDelegate.swift */,
 				69325F92286ECE8A007FCD71 /* SceneDelegate.swift */,
 				69325FB4286EE42B007FCD71 /* TabBarViewController.swift */,
-				69325FBB28735286007FCD71 /* NavigationViewController.swift */,
-				69325F94286ECE8A007FCD71 /* ViewController.swift */,
 				69325FAE286EE227007FCD71 /* SearchViewController.swift */,
-				69325FB0286EE25A007FCD71 /* StreamViewController.swift */,
 				69325FB2286EE271007FCD71 /* LibraryViewController.swift */,
-				69325F96286ECE8A007FCD71 /* Main.storyboard */,
-				69325FA8286ED928007FCD71 /* Stream.storyboard */,
+				69C31EAF287D64980047F486 /* LibraryNavigationController.swift */,
+				69A1B7B7287E901E00866ECC /* New Group */,
 				69325FAA286ED953007FCD71 /* Search.storyboard */,
 				69325FAC286ED965007FCD71 /* Library.storyboard */,
+				69AA1158287D66D500F093E7 /* Stream.storyboard */,
+				69AA1157287D66D500F093E7 /* StreamNavigationController.swift */,
+				69AA1159287D66D500F093E7 /* StreamViewController.swift */,
 				69325F99286ECE8E007FCD71 /* Assets.xcassets */,
 				69325F9B286ECE8E007FCD71 /* LaunchScreen.storyboard */,
 				69325F9E286ECE8E007FCD71 /* Info.plist */,
@@ -93,6 +97,16 @@
 				69325FA6286ED25B007FCD71 /* InterstatePlus Bold.ttf */,
 			);
 			path = SoundCloud;
+			sourceTree = "<group>";
+		};
+		69A1B7B7287E901E00866ECC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				69325FBB28735286007FCD71 /* NavigationViewController.swift */,
+				69325F94286ECE8A007FCD71 /* ViewController.swift */,
+				69325F96286ECE8A007FCD71 /* Main.storyboard */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +170,8 @@
 				69325F9D286ECE8E007FCD71 /* LaunchScreen.storyboard in Resources */,
 				69325F9A286ECE8E007FCD71 /* Assets.xcassets in Resources */,
 				69325F98286ECE8A007FCD71 /* Main.storyboard in Resources */,
+				69AA115B287D66D500F093E7 /* Stream.storyboard in Resources */,
 				69325FAB286ED953007FCD71 /* Search.storyboard in Resources */,
-				69325FA9286ED928007FCD71 /* Stream.storyboard in Resources */,
 				69325FAD286ED965007FCD71 /* Library.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,12 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69AA115D287D6B4B00F093E7 /* SearchViewController.swift in Sources */,
 				69325FBC28735286007FCD71 /* NavigationViewController.swift in Sources */,
-				69325FB1286EE25A007FCD71 /* StreamViewController.swift in Sources */,
+				69AA115C287D66D500F093E7 /* StreamViewController.swift in Sources */,
 				69325F95286ECE8A007FCD71 /* ViewController.swift in Sources */,
 				69325F91286ECE8A007FCD71 /* AppDelegate.swift in Sources */,
-				69325FAF286EE227007FCD71 /* SearchViewController.swift in Sources */,
 				69325FB5286EE42B007FCD71 /* TabBarViewController.swift in Sources */,
+				69AA115A287D66D500F093E7 /* StreamNavigationController.swift in Sources */,
+				69C31EB0287D64980047F486 /* LibraryNavigationController.swift in Sources */,
 				69325FB3286EE271007FCD71 /* LibraryViewController.swift in Sources */,
 				69325F93286ECE8A007FCD71 /* SceneDelegate.swift in Sources */,
 			);
@@ -329,6 +345,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SoundCloud/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SoundCloud;
+				INFOPLIST_KEY_NSCameraUsageDescription = "camera on";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -358,6 +375,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SoundCloud/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SoundCloud;
+				INFOPLIST_KEY_NSCameraUsageDescription = "camera on";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

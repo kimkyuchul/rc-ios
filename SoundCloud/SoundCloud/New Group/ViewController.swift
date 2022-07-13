@@ -6,12 +6,12 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     @IBOutlet var followButton: UIButton!
     @IBOutlet var followButton1: UIButton!
     @IBOutlet var followButton2: UIButton!
-    
     @IBOutlet var followButton3: UIButton!
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xNE-pI-sb0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -13,7 +13,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Search View Controller-->
+        <!--Search-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="Search" id="Y6W-OH-hqX" customClass="SearchViewController" customModule="SoundCloud" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,32 +21,122 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3pf-pA-8Vo">
-                                <rect key="frame" x="10" y="94" width="131" height="39.5"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sG7-V2-Nb2">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRp-jG-g9E">
-                                        <rect key="frame" x="0.0" y="0.0" width="131" height="39.5"/>
-                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="40"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDm-Iu-zyj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <subviews>
+                                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="jF4-ns-pFy">
+                                                <rect key="frame" x="15" y="10" width="384" height="51"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </searchBar>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i5D-lr-GC2">
+                                                <rect key="frame" x="50.5" y="308.5" width="313" height="43.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search SoundCloud" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tos-nf-zTD">
+                                                        <rect key="frame" x="65" y="0.0" width="183.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find artists, tracks, albums, and, playlists." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3b-64-oHc">
+                                                        <rect key="frame" x="0.0" y="28" width="313" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15.5"/>
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstItem="jF4-ns-pFy" firstAttribute="leading" secondItem="sDm-Iu-zyj" secondAttribute="leading" constant="15" id="3Lh-TV-qpv"/>
+                                            <constraint firstItem="jF4-ns-pFy" firstAttribute="top" secondItem="sDm-Iu-zyj" secondAttribute="top" constant="10" id="COx-ct-ASX"/>
+                                            <constraint firstItem="i5D-lr-GC2" firstAttribute="centerX" secondItem="sDm-Iu-zyj" secondAttribute="centerX" id="MyO-vB-GvM"/>
+                                            <constraint firstItem="i5D-lr-GC2" firstAttribute="centerY" secondItem="sDm-Iu-zyj" secondAttribute="centerY" constant="-70" id="Ufq-5M-Db8"/>
+                                            <constraint firstAttribute="height" constant="800" id="bXt-zX-BpG"/>
+                                            <constraint firstAttribute="trailing" secondItem="jF4-ns-pFy" secondAttribute="trailing" constant="15" id="cm1-oR-IdX"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                            </stackView>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sDm-Iu-zyj" firstAttribute="bottom" secondItem="CTb-v7-gEO" secondAttribute="bottom" id="IDo-uZ-bwK"/>
+                                    <constraint firstItem="sDm-Iu-zyj" firstAttribute="width" secondItem="Cjj-Gg-aqO" secondAttribute="width" id="UGO-Wj-Kcc"/>
+                                    <constraint firstItem="sDm-Iu-zyj" firstAttribute="trailing" secondItem="CTb-v7-gEO" secondAttribute="trailing" id="Ujp-XZ-uCb"/>
+                                    <constraint firstItem="sDm-Iu-zyj" firstAttribute="top" secondItem="CTb-v7-gEO" secondAttribute="top" id="l1q-Oz-aaL"/>
+                                    <constraint firstItem="sDm-Iu-zyj" firstAttribute="leading" secondItem="CTb-v7-gEO" secondAttribute="leading" id="t8U-ya-s0B"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="CTb-v7-gEO"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Cjj-Gg-aqO"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3pf-pA-8Vo" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="O9o-2q-xAy"/>
-                            <constraint firstItem="3pf-pA-8Vo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="p6M-eb-q9c"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sG7-V2-Nb2" secondAttribute="bottom" id="09g-aY-tqK"/>
+                            <constraint firstItem="sG7-V2-Nb2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8MR-cf-wJg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sG7-V2-Nb2" secondAttribute="trailing" id="qhL-61-11c"/>
+                            <constraint firstItem="sG7-V2-Nb2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wuh-By-zCN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="SearchTab" id="Xsb-In-qhr"/>
+                    <navigationItem key="navigationItem" title="Search" id="lKV-cG-FJt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="jF4-ns-pFy" id="Vbe-Vg-33S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="119"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
+        </scene>
+        <!--Search Navigation Controller-->
+        <scene sceneID="U8C-KW-beY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xNE-pI-sb0" customClass="SearchNavigationController" customModule="SoundCloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="SearchTab" id="Xsb-In-qhr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="wi5-AX-G67">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="djq-Yy-ezH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SbD-9H-w6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
     </scenes>
     <resources>

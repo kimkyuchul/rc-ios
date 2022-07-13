@@ -22,11 +22,11 @@
             <objects>
                 <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="SoundCloud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2017"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="RAi-oL-1J9">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="2017"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgF-Yk-jFM">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2100"/>
@@ -40,7 +40,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestions based on what you've liked or played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lah-nV-cFc">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestions based on what you've liked or played" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lah-nV-cFc">
                                                         <rect key="frame" x="0.0" y="32.5" width="389" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15.5"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,7 +76,7 @@
                                                             </stackView>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="k09-ui-FvB" firstAttribute="top" secondItem="IwQ-mB-reB" secondAttribute="bottom" constant="14" id="4x4-Q1-8Kd"/>
+                                                            <constraint firstItem="k09-ui-FvB" firstAttribute="top" relation="lessThanOrEqual" secondItem="IwQ-mB-reB" secondAttribute="bottom" constant="14" id="4x4-Q1-8Kd"/>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pgi-Ir-vOy">
@@ -104,7 +104,7 @@
                                                             </stackView>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="DRN-Gm-2Kg" firstAttribute="top" secondItem="6IZ-mr-I0Q" secondAttribute="bottom" constant="14" id="r2c-bd-4IZ"/>
+                                                            <constraint firstItem="DRN-Gm-2Kg" firstAttribute="top" relation="lessThanOrEqual" secondItem="6IZ-mr-I0Q" secondAttribute="bottom" constant="14" id="r2c-bd-4IZ"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
@@ -527,6 +527,7 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <size key="freeformSize" width="414" height="2100"/>
                     <connections>
                         <outlet property="followButton" destination="eEg-uC-9kt" id="rzn-4K-MoK"/>
                         <outlet property="followButton1" destination="dXd-sJ-xWk" id="QyQ-5N-NlZ"/>
@@ -540,8 +541,8 @@
         <!--Stream-->
         <scene sceneID="7U7-wg-fH0">
             <objects>
-                <viewControllerPlaceholder storyboardName="Stream" referencedIdentifier="Stream" id="Cav-4T-GFO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VxV-A4-VWS"/>
+                <viewControllerPlaceholder storyboardIdentifier="Stream" storyboardName="Stream" id="Cav-4T-GFO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Stream" id="VxV-A4-VWS"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rj8-UK-HPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -601,7 +602,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s5T-uy-kyl" customClass="NavigationViewController" customModule="SoundCloud" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="HomeTab" selectedImage="HomeTab" id="Iwo-8R-QE2"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="VSu-3j-csx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="StreamNavigationBar" largeTitles="YES" id="VSu-3j-csx">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -652,6 +653,7 @@
         <image name="MoreLikeTrack2" width="180" height="180"/>
         <image name="Recently Played" width="180" height="180"/>
         <image name="Recently Played1" width="180" height="180"/>
+        <image name="Stream" width="35" height="35"/>
         <image name="Top50" width="180" height="180"/>
         <image name="Top50_1" width="180" height="180"/>
         <image name="UploadImage" width="386" height="385"/>
