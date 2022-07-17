@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkk-4Z-tCW">
-                                <rect key="frame" x="0.0" y="140" width="414" height="1477"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1529"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="diw-HW-kie">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1700"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="knH-K3-XMT">
-                                                <rect key="frame" x="10" y="17" width="265.5" height="40"/>
+                                                <rect key="frame" x="10" y="17" width="255.5" height="40"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="MIq-4M-qxQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -39,32 +39,27 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WP7-D5-b1e">
-                                                        <rect key="frame" x="48" y="10" width="217.5" height="20"/>
+                                                        <rect key="frame" x="48" y="10" width="207.5" height="20"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8EX-fK-WIh">
-                                                                <rect key="frame" x="0.0" y="0.0" width="62" height="20"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="slom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTj-qp-ehq">
-                                                                        <rect key="frame" x="0.0" y="5" width="34" height="15"/>
-                                                                        <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
-                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdC-VC-aNg">
-                                                                        <rect key="frame" x="42" y="0.0" width="20" height="20"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="20" id="74T-eT-UpS"/>
-                                                                            <constraint firstAttribute="height" constant="20" id="7LF-uf-gyk"/>
-                                                                        </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" image="checkmark.circle.fill" catalog="system" title="">
-                                                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                                                        </buttonConfiguration>
-                                                                    </button>
-                                                                </subviews>
-                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="slom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTj-qp-ehq">
+                                                                <rect key="frame" x="0.0" y="2.5" width="32.5" height="17.5"/>
+                                                                <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdC-VC-aNg">
+                                                                <rect key="frame" x="40.5" y="0.0" width="20" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="74T-eT-UpS"/>
+                                                                    <constraint firstAttribute="height" constant="20" id="7LF-uf-gyk"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="checkmark.circle.fill" catalog="system" title="">
+                                                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="posted a track . 15d " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dt8-dd-bMD">
-                                                                <rect key="frame" x="70" y="5" width="147.5" height="15"/>
+                                                                <rect key="frame" x="68.5" y="2.5" width="139" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -74,22 +69,22 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="x9O-FQ-TaM">
-                                                <rect key="frame" x="-1" y="455" width="246" height="44"/>
+                                                <rect key="frame" x="10" y="455" width="226.5" height="44"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="Gi4-7w-csf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="44"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gi4-7w-csf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="44"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WR-XC-cK0">
-                                                                <rect key="frame" x="0.0" y="0.0" width="63" height="44"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WR-XC-cK0">
+                                                                <rect key="frame" x="0.0" y="5" width="39" height="34.5"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal">
+                                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <imageReference key="image" image="suit.heart" catalog="system" symbolScale="large"/>
-                                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
-                                                                    <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </buttonConfiguration>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                                                </state>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USj-4B-HgZ">
-                                                                <rect key="frame" x="56" y="14.5" width="20" height="15"/>
+                                                                <rect key="frame" x="44" y="13.5" width="17" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -97,7 +92,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="PBE-6F-GI8">
-                                                        <rect key="frame" x="84" y="0.0" width="69.5" height="44"/>
+                                                        <rect key="frame" x="69" y="0.0" width="68" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3W-Rt-6Jz">
                                                                 <rect key="frame" x="0.0" y="0.0" width="66.5" height="44"/>
@@ -109,7 +104,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1I-kq-lLG">
-                                                                <rect key="frame" x="59.5" y="14.5" width="10" height="15"/>
+                                                                <rect key="frame" x="59.5" y="13.5" width="8.5" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -117,7 +112,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="FR3-3A-Gim">
-                                                        <rect key="frame" x="161.5" y="0.0" width="84.5" height="44"/>
+                                                        <rect key="frame" x="145" y="0.0" width="81.5" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knr-EE-XE5">
                                                                 <rect key="frame" x="0.0" y="0.0" width="71.5" height="44"/>
@@ -129,7 +124,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN8-bF-2R6">
-                                                                <rect key="frame" x="64.5" y="14.5" width="20" height="15"/>
+                                                                <rect key="frame" x="64.5" y="13.5" width="17" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -139,14 +134,14 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukn-wu-BH0">
-                                                <rect key="frame" x="365.5" y="462" width="43.5" height="31"/>
+                                                <rect key="frame" x="365.5" y="461.5" width="43.5" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="ellipsis" catalog="system">
                                                     <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v7w-fJ-15p">
-                                                <rect key="frame" x="10" y="549" width="265" height="40"/>
+                                                <rect key="frame" x="10" y="549" width="255.5" height="40"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="B2W-BB-k1E">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -156,19 +151,19 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dHm-34-jSh">
-                                                        <rect key="frame" x="48" y="10" width="217" height="20"/>
+                                                        <rect key="frame" x="48" y="10" width="207.5" height="20"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sYf-UP-97s">
-                                                                <rect key="frame" x="0.0" y="0.0" width="62" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="60.5" height="20"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="slom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhq-tL-xYW">
-                                                                        <rect key="frame" x="0.0" y="5" width="34" height="15"/>
+                                                                        <rect key="frame" x="0.0" y="2.5" width="32.5" height="17.5"/>
                                                                         <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJx-N7-EOW">
-                                                                        <rect key="frame" x="42" y="0.0" width="20" height="20"/>
+                                                                        <rect key="frame" x="40.5" y="0.0" width="20" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="20" id="fZD-WZ-x7x"/>
                                                                             <constraint firstAttribute="height" constant="20" id="kyw-bL-YyT"/>
@@ -181,7 +176,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="posted a track . 25d " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLr-uX-sRz">
-                                                                <rect key="frame" x="70" y="5" width="147" height="15"/>
+                                                                <rect key="frame" x="68.5" y="2.5" width="139" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -194,10 +189,10 @@
                                                 <rect key="frame" x="5" y="599" width="404" height="385"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ehw-pF-Fq2">
-                                                <rect key="frame" x="-1" y="987" width="246" height="44"/>
+                                                <rect key="frame" x="-1" y="987" width="238.5" height="44"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="P4N-hX-Oko">
-                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="73" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GS9-4c-Jdb">
                                                                 <rect key="frame" x="0.0" y="0.0" width="63" height="44"/>
@@ -209,7 +204,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVR-Vg-bWD">
-                                                                <rect key="frame" x="56" y="14.5" width="20" height="15"/>
+                                                                <rect key="frame" x="56" y="13.5" width="17" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -217,7 +212,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="xqc-re-mp7">
-                                                        <rect key="frame" x="84" y="0.0" width="69.5" height="44"/>
+                                                        <rect key="frame" x="81" y="0.0" width="68" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuW-R7-4pg">
                                                                 <rect key="frame" x="0.0" y="0.0" width="66.5" height="44"/>
@@ -229,7 +224,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfP-QC-KQt">
-                                                                <rect key="frame" x="59.5" y="14.5" width="10" height="15"/>
+                                                                <rect key="frame" x="59.5" y="13.5" width="8.5" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -237,7 +232,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="tys-7Z-UZO">
-                                                        <rect key="frame" x="161.5" y="0.0" width="84.5" height="44"/>
+                                                        <rect key="frame" x="157" y="0.0" width="81.5" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnI-pZ-S4N">
                                                                 <rect key="frame" x="0.0" y="0.0" width="71.5" height="44"/>
@@ -249,7 +244,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSE-x4-dNo">
-                                                                <rect key="frame" x="64.5" y="14.5" width="20" height="15"/>
+                                                                <rect key="frame" x="64.5" y="13.5" width="17" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -266,7 +261,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Ra-Cu-BBt">
-                                                <rect key="frame" x="10" y="1081" width="313.5" height="40"/>
+                                                <rect key="frame" x="10" y="1081" width="302.5" height="40"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="oEd-b5-wfX">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -276,19 +271,19 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YUK-wT-fNn">
-                                                        <rect key="frame" x="48" y="10" width="265.5" height="20"/>
+                                                        <rect key="frame" x="48" y="10" width="254.5" height="20"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QNG-HV-6Av">
-                                                                <rect key="frame" x="0.0" y="0.0" width="107" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="20"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEENZINO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDu-Yo-sBe">
-                                                                        <rect key="frame" x="0.0" y="5" width="79" height="15"/>
+                                                                        <rect key="frame" x="0.0" y="2.5" width="75" height="17.5"/>
                                                                         <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfp-iq-TZl">
-                                                                        <rect key="frame" x="87" y="0.0" width="20" height="20"/>
+                                                                        <rect key="frame" x="83" y="0.0" width="20" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="20" id="UP1-3f-Som"/>
                                                                             <constraint firstAttribute="height" constant="20" id="fNg-52-RXh"/>
@@ -301,7 +296,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="posted a track . 8mo " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUr-JX-fAY">
-                                                                <rect key="frame" x="115" y="5" width="150.5" height="15"/>
+                                                                <rect key="frame" x="111" y="2.5" width="143.5" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -314,10 +309,10 @@
                                                 <rect key="frame" x="5" y="1131" width="404" height="385"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7dV-1z-6rP">
-                                                <rect key="frame" x="-1" y="1519" width="246" height="44"/>
+                                                <rect key="frame" x="-1" y="1519" width="238.5" height="44"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="chz-ba-PK0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="73" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SC2-MH-koj">
                                                                 <rect key="frame" x="0.0" y="0.0" width="63" height="44"/>
@@ -329,7 +324,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dL-Dq-xmg">
-                                                                <rect key="frame" x="56" y="14.5" width="20" height="15"/>
+                                                                <rect key="frame" x="56" y="13.5" width="17" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -337,7 +332,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="Xyw-ib-Kfa">
-                                                        <rect key="frame" x="84" y="0.0" width="69.5" height="44"/>
+                                                        <rect key="frame" x="81" y="0.0" width="68" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIK-ND-0bd">
                                                                 <rect key="frame" x="0.0" y="0.0" width="66.5" height="44"/>
@@ -349,7 +344,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVu-A9-SOv">
-                                                                <rect key="frame" x="59.5" y="14.5" width="10" height="15"/>
+                                                                <rect key="frame" x="59.5" y="13.5" width="8.5" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -357,7 +352,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="u5j-rC-LyL">
-                                                        <rect key="frame" x="161.5" y="0.0" width="84.5" height="44"/>
+                                                        <rect key="frame" x="157" y="0.0" width="81.5" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YL2-AW-Mf1">
                                                                 <rect key="frame" x="0.0" y="0.0" width="71.5" height="44"/>
@@ -369,7 +364,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwP-hm-nNl">
-                                                                <rect key="frame" x="64.5" y="14.5" width="20" height="15"/>
+                                                                <rect key="frame" x="64.5" y="13.5" width="17" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -398,7 +393,8 @@
                                             <constraint firstItem="xKT-KJ-Z9E" firstAttribute="top" secondItem="v7w-fJ-15p" secondAttribute="bottom" constant="10" id="LGA-1p-Pt8"/>
                                             <constraint firstItem="GNM-44-Sii" firstAttribute="leading" secondItem="diw-HW-kie" secondAttribute="leading" constant="5" id="REJ-By-4qp"/>
                                             <constraint firstItem="v7w-fJ-15p" firstAttribute="top" secondItem="x9O-FQ-TaM" secondAttribute="bottom" constant="50" id="Sf5-t1-Lg9"/>
-                                            <constraint firstItem="x9O-FQ-TaM" firstAttribute="leading" secondItem="diw-HW-kie" secondAttribute="leading" constant="-1" id="TlG-VV-1us"/>
+                                            <constraint firstItem="x9O-FQ-TaM" firstAttribute="leading" secondItem="diw-HW-kie" secondAttribute="leading" constant="10" id="TlG-VV-1us"/>
+                                            <constraint firstItem="ukn-wu-BH0" firstAttribute="centerY" secondItem="x9O-FQ-TaM" secondAttribute="centerY" id="Ybw-Wv-hRI"/>
                                             <constraint firstItem="GNM-44-Sii" firstAttribute="top" secondItem="8Ra-Cu-BBt" secondAttribute="bottom" constant="10" id="bDC-VH-HuR"/>
                                             <constraint firstItem="Ehw-pF-Fq2" firstAttribute="top" secondItem="xKT-KJ-Z9E" secondAttribute="bottom" constant="3" id="e2f-td-DM5"/>
                                             <constraint firstItem="diV-Hq-kdW" firstAttribute="top" secondItem="xKT-KJ-Z9E" secondAttribute="bottom" constant="10" id="fkM-T2-Kri"/>
@@ -427,7 +423,6 @@
                                     <constraint firstItem="diw-HW-kie" firstAttribute="trailing" secondItem="5zF-Dh-4fl" secondAttribute="trailing" id="eVs-hG-ZTs"/>
                                     <constraint firstItem="diw-HW-kie" firstAttribute="leading" secondItem="5zF-Dh-4fl" secondAttribute="leading" id="elv-ql-O2C"/>
                                     <constraint firstItem="NSr-sg-FtJ" firstAttribute="top" secondItem="knH-K3-XMT" secondAttribute="bottom" constant="10" id="j32-Ub-DCG"/>
-                                    <constraint firstItem="ukn-wu-BH0" firstAttribute="top" secondItem="NSr-sg-FtJ" secondAttribute="bottom" constant="10" id="mVV-T6-8b0"/>
                                     <constraint firstItem="diw-HW-kie" firstAttribute="top" secondItem="5zF-Dh-4fl" secondAttribute="top" id="rXn-pm-w54"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="5zF-Dh-4fl"/>
@@ -459,7 +454,7 @@
                     <tabBarItem key="tabBarItem" title="" image="Stream" id="RwP-dC-PMb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="TJc-ar-JmE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="98"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">

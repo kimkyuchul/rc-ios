@@ -18,11 +18,11 @@
             <objects>
                 <viewController storyboardIdentifier="Library" id="p8s-fr-Kxy" customClass="LibraryViewController" customModule="SoundCloud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gvt-JZ-Rue">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZE-xM-ALI">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="142" width="414" height="1575"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YB8-Ql-AHC">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
@@ -58,10 +58,10 @@
                                                 </prototypes>
                                             </tableView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eXi-eS-7vL">
-                                                <rect key="frame" x="10" y="357" width="188" height="24.5"/>
+                                                <rect key="frame" x="10" y="357" width="179" height="29.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VE-gA-gba">
-                                                        <rect key="frame" x="0.0" y="0.0" width="188" height="24.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -69,25 +69,25 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4hv-6V-qZt">
-                                                <rect key="frame" x="10" y="398.5" width="379" height="227"/>
+                                                <rect key="frame" x="10" y="403.5" width="379" height="232"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="MBg-mD-J9d">
-                                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="227"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="232"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoreLikeTrack1" translatesAutoresizingMaskIntoConstraints="NO" id="Qsl-VQ-czr">
                                                                 <rect key="frame" x="0.0" y="0.0" width="179.5" height="180"/>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="SZV-NF-UBy">
-                                                                <rect key="frame" x="0.0" y="194" width="103.5" height="33"/>
+                                                                <rect key="frame" x="0.0" y="194" width="97" height="38"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SODA (Demo)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h90-0a-IxN">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="15"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="17.5"/>
                                                                         <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJQ-Xy-N0h">
-                                                                        <rect key="frame" x="0.0" y="18" width="103.5" height="15"/>
+                                                                        <rect key="frame" x="0.0" y="20.5" width="97" height="17.5"/>
                                                                         <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -100,22 +100,22 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="gqf-E5-YJV">
-                                                        <rect key="frame" x="199.5" y="0.0" width="179.5" height="227"/>
+                                                        <rect key="frame" x="199.5" y="0.0" width="179.5" height="232"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoreLikeTrack2" translatesAutoresizingMaskIntoConstraints="NO" id="THv-gF-yP1">
                                                                 <rect key="frame" x="0.0" y="0.0" width="179.5" height="180"/>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="8qF-N3-ZRq">
-                                                                <rect key="frame" x="0.0" y="194" width="103.5" height="33"/>
+                                                                <rect key="frame" x="0.0" y="194" width="97" height="38"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monet (Demo)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm8-3Q-iyz">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="15"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="17.5"/>
                                                                         <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogW-SK-VUx">
-                                                                        <rect key="frame" x="0.0" y="18" width="103.5" height="15"/>
+                                                                        <rect key="frame" x="0.0" y="20.5" width="97" height="17.5"/>
                                                                         <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -130,16 +130,16 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vji-Zr-FDh">
-                                                <rect key="frame" x="355" y="361.5" width="49" height="15.5"/>
+                                                <rect key="frame" x="357.5" y="363.5" width="46.5" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15.5"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Ou-Zf-88D">
-                                                <rect key="frame" x="10" y="675.5" width="202.5" height="24.5"/>
+                                                <rect key="frame" x="10" y="685.5" width="183" height="29.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listening history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLi-17-csv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="202.5" height="24.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -147,34 +147,34 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKh-qz-Qa3">
-                                                <rect key="frame" x="355" y="680" width="49" height="15.5"/>
+                                                <rect key="frame" x="357.5" y="690" width="46.5" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15.5"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bKK-c1-KO8">
-                                                <rect key="frame" x="10" y="715" width="394" height="120"/>
+                                                <rect key="frame" x="10" y="730" width="394" height="120"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ListeningImage" translatesAutoresizingMaskIntoConstraints="NO" id="Kv0-1i-8Uc">
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="2bn-3D-mfk">
-                                                        <rect key="frame" x="128" y="27.5" width="214.5" height="65.5"/>
+                                                        <rect key="frame" x="128" y="22" width="214.5" height="76"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keith Ape - 잊지마 (lt G Ma) (feat. JayAllDay, Loota, Okasian" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvO-gz-hiW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="194" height="29.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="212" height="35"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KeithApe'22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cm-gS-iom">
-                                                                <rect key="frame" x="0.0" y="32.5" width="89" height="15"/>
+                                                                <rect key="frame" x="0.0" y="38" width="82" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt; 18.9M 5:22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szH-ZA-khF">
-                                                                <rect key="frame" x="0.0" y="50.5" width="95" height="15"/>
+                                                                <rect key="frame" x="0.0" y="58.5" width="89" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -191,28 +191,28 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lYF-f3-AOv">
-                                                <rect key="frame" x="10" y="850" width="394" height="120"/>
+                                                <rect key="frame" x="10" y="865" width="394" height="120"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ListeningImage1" translatesAutoresizingMaskIntoConstraints="NO" id="0Mp-i7-rvL">
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="TsS-Nf-VmI">
-                                                        <rect key="frame" x="128" y="34.5" width="214.5" height="51"/>
+                                                        <rect key="frame" x="128" y="31" width="214.5" height="58.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SODA (demo)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NB-xB-nLt">
-                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="15"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="92" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEENZINO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd3-AV-8Xr">
-                                                                <rect key="frame" x="0.0" y="18" width="79" height="15"/>
+                                                                <rect key="frame" x="0.0" y="20.5" width="75" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt; 200.9M 2:40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buT-WN-Pwi">
-                                                                <rect key="frame" x="0.0" y="36" width="104.5" height="15"/>
+                                                                <rect key="frame" x="0.0" y="41" width="97.5" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -229,28 +229,28 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="twb-mV-ldv">
-                                                <rect key="frame" x="10" y="985" width="394" height="120"/>
+                                                <rect key="frame" x="10" y="1000" width="394" height="120"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ListeningImage2" translatesAutoresizingMaskIntoConstraints="NO" id="6BJ-of-qjO">
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hKq-iv-Dqb">
-                                                        <rect key="frame" x="128" y="34.5" width="214.5" height="51"/>
+                                                        <rect key="frame" x="128" y="31" width="214.5" height="58.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01. DOODATSIT (feat.우원재)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNm-bI-qC6">
-                                                                <rect key="frame" x="0.0" y="0.0" width="200" height="15"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="188.5" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAXXWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvT-gi-F78">
-                                                                <rect key="frame" x="0.0" y="18" width="86.5" height="15"/>
+                                                                <rect key="frame" x="0.0" y="20.5" width="83" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt; 124.1k 3:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mi-Ys-QdP">
-                                                                <rect key="frame" x="0.0" y="36" width="100" height="15"/>
+                                                                <rect key="frame" x="0.0" y="41" width="92" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="InterstatePlus-Bold" family="InterstatePlus" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -318,8 +318,9 @@
                             <constraint firstItem="mJ4-u3-JS2" firstAttribute="bottom" secondItem="NZE-xM-ALI" secondAttribute="bottom" id="jfl-f4-paf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Library" id="eJv-pU-bFE"/>
+                    <navigationItem key="navigationItem" title="Library" id="eSv-Yd-E9M"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="414" height="1800"/>
                     <connections>
                         <outlet property="libraryTableView" destination="esw-lV-vF2" id="DN5-Le-lqX"/>
                     </connections>
@@ -335,7 +336,7 @@
                     <tabBarItem key="tabBarItem" title="" image="LibraryTab" selectedImage="Library_fil" id="hXJ-5P-z35"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="wAn-22-jTh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="98"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">

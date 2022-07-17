@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Yu-ib-XRr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppleMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OiU-C2-aBe">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-8f-Ioi">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nD4-zI-chh"/>
+                                    <barButtonItem style="plain" systemItem="compose" id="isz-Bl-xGy">
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <connections>
+                                            <action selector="writeButtonClicked:" destination="BYZ-38-t0r" id="79J-XQ-8Ii"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OiU-C2-aBe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="29H-J3-8dE"/>
+                            <constraint firstItem="aKP-8f-Ioi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DzR-0c-W4E"/>
+                            <constraint firstItem="aKP-8f-Ioi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F80-oW-i8W"/>
+                            <constraint firstItem="aKP-8f-Ioi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QYZ-L8-18f"/>
+                            <constraint firstItem="OiU-C2-aBe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RLK-pg-dOP"/>
+                            <constraint firstItem="OiU-C2-aBe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XQ7-oc-ziU"/>
+                            <constraint firstItem="aKP-8f-Ioi" firstAttribute="top" secondItem="OiU-C2-aBe" secondAttribute="bottom" id="zFd-9r-Qdg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FqX-SY-oHI"/>
+                    <connections>
+                        <outlet property="memoTablewView" destination="OiU-C2-aBe" id="jHW-7q-9FK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760.8695652173915" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tIv-mC-luI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Yu-ib-XRr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NYA-s1-OH6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="s3F-4F-0Sx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vb-pM-Ias" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.72463768115949" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

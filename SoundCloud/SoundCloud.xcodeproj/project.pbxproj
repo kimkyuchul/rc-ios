@@ -89,7 +89,7 @@
 				69A1B7BC287EC2A700866ECC /* SearchNavigationController.swift */,
 				69325FB2286EE271007FCD71 /* LibraryViewController.swift */,
 				69C31EAF287D64980047F486 /* LibraryNavigationController.swift */,
-				69A1B7B7287E901E00866ECC /* New Group */,
+				69A1B7B7287E901E00866ECC /* Home */,
 				69325FAA286ED953007FCD71 /* Search.storyboard */,
 				69325FAC286ED965007FCD71 /* Library.storyboard */,
 				69AA1158287D66D500F093E7 /* Stream.storyboard */,
@@ -104,14 +104,14 @@
 			path = SoundCloud;
 			sourceTree = "<group>";
 		};
-		69A1B7B7287E901E00866ECC /* New Group */ = {
+		69A1B7B7287E901E00866ECC /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				69325FBB28735286007FCD71 /* NavigationViewController.swift */,
 				69325F94286ECE8A007FCD71 /* ViewController.swift */,
 				69325F96286ECE8A007FCD71 /* Main.storyboard */,
 			);
-			path = "New Group";
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
