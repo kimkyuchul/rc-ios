@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69CBC9C12886675900D7653C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 69CBC9C02886675900D7653C /* Realm */; };
+		69CBC9C32886675900D7653C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 69CBC9C22886675900D7653C /* RealmSwift */; };
+		69CBC9C52886677D00D7653C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBC9C42886677D00D7653C /* Model.swift */; };
+		69CBC9C928866FE400D7653C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBC9C728866FE400D7653C /* TableViewCell.swift */; };
+		69CBC9CA28866FE400D7653C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69CBC9C828866FE400D7653C /* TableViewCell.xib */; };
 		69E2EE802883FABB00828016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2EE7F2883FABB00828016 /* AppDelegate.swift */; };
 		69E2EE822883FABB00828016 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2EE812883FABB00828016 /* SceneDelegate.swift */; };
 		69E2EE842883FABB00828016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2EE832883FABB00828016 /* ViewController.swift */; };
@@ -18,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69CBC9C42886677D00D7653C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		69CBC9C728866FE400D7653C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		69CBC9C828866FE400D7653C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		69E2EE7C2883FABB00828016 /* AppleMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E2EE7F2883FABB00828016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69E2EE812883FABB00828016 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,12 +43,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69CBC9C32886675900D7653C /* RealmSwift in Frameworks */,
+				69CBC9C12886675900D7653C /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69CBC9C62886678F00D7653C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69CBC9C42886677D00D7653C /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69CBC9CB28866FFD00D7653C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				69CBC9C728866FE400D7653C /* TableViewCell.swift */,
+				69CBC9C828866FE400D7653C /* TableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		69E2EE732883FABB00828016 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +87,9 @@
 		69E2EE7E2883FABB00828016 /* AppleMemo */ = {
 			isa = PBXGroup;
 			children = (
+				69CBC9CB28866FFD00D7653C /* Cell */,
 				69E2EE7F2883FABB00828016 /* AppDelegate.swift */,
+				69CBC9C62886678F00D7653C /* Model */,
 				69E2EE812883FABB00828016 /* SceneDelegate.swift */,
 				69E2EE942884040D00828016 /* ViewController */,
 				69E2EE93288402F200828016 /* View */,
@@ -105,6 +134,10 @@
 			dependencies = (
 			);
 			name = AppleMemo;
+			packageProductDependencies = (
+				69CBC9C02886675900D7653C /* Realm */,
+				69CBC9C22886675900D7653C /* RealmSwift */,
+			);
 			productName = AppleMemo;
 			productReference = 69E2EE7C2883FABB00828016 /* AppleMemo.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +166,9 @@
 				Base,
 			);
 			mainGroup = 69E2EE732883FABB00828016;
+			packageReferences = (
+				69CBC9BF2886675900D7653C /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 69E2EE7D2883FABB00828016 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E2EE8C2883FABF00828016 /* LaunchScreen.storyboard in Resources */,
+				69CBC9CA28866FE400D7653C /* TableViewCell.xib in Resources */,
 				69E2EE892883FABF00828016 /* Assets.xcassets in Resources */,
 				69E2EE872883FABB00828016 /* Main.storyboard in Resources */,
 				69E2EE962884278B00828016 /* Detail.storyboard in Resources */,
@@ -163,6 +200,8 @@
 			files = (
 				69E2EE842883FABB00828016 /* ViewController.swift in Sources */,
 				69E2EE802883FABB00828016 /* AppDelegate.swift in Sources */,
+				69CBC9C52886677D00D7653C /* Model.swift in Sources */,
+				69CBC9C928866FE400D7653C /* TableViewCell.swift in Sources */,
 				69E2EE822883FABB00828016 /* SceneDelegate.swift in Sources */,
 				69E2EE98288427C200828016 /* DetailViewController.swift in Sources */,
 			);
@@ -384,6 +423,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69CBC9BF2886675900D7653C /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69CBC9C02886675900D7653C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69CBC9BF2886675900D7653C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		69CBC9C22886675900D7653C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69CBC9BF2886675900D7653C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69E2EE742883FABB00828016 /* Project object */;
 }
