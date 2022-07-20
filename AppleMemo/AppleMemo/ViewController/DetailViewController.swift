@@ -12,16 +12,19 @@ class DetailViewController: UIViewController {
     
     let realm = try! Realm()
     
-    let memo: Memo
     
     @IBOutlet var memoTextView: UITextView!
     let appearance = UINavigationBarAppearance()
+    
+    var textSpace:String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.navigationBar.tintColor = .systemOrange
         addBarButtonItem()
+        
+        memoTextView.text = textSpace
         
         
     }
@@ -41,12 +44,16 @@ class DetailViewController: UIViewController {
     
    
     override func viewWillDisappear(_ animated: Bool) {
-        super .viewWillDisappear(animated)
+        super.viewWillDisappear(animated)
         
         appearance.backgroundColor = UIColor.tertiarySystemGroupedBackground
         
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        
+        saveData()
+        print(saveData())
+        
     }
     
 
@@ -60,16 +67,22 @@ class DetailViewController: UIViewController {
         }
     
     
-    func getMemoItem(memo: Memo) {
-        let title = memoTextView.map(<#T##transform: (UITextView) throws -> U##(UITextView) throws -> U#>)
+    func saveData() {
+        
+        let title = memoTextView.text.split(separator: "\n", maxSplits: 1).map(String.init)[0]
+        let content = memoTextView.text.split(separator: "\n", maxSplits: 1).map(String.init)[1]
+        
+        let memoTask = Memo(title: title, content: content)
+        
+        if memoTextView != nil {
+        
+            try! realm.write{
+                realm.add(memoTask)
+            }
+        }
+
     }
-    
-    
-    
-    
-    
 }
-     
         
 
     

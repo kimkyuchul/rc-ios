@@ -10,8 +10,8 @@ import SwiftUI
 
 class TableViewCell: UITableViewCell {
     
-    @IBOutlet  weak var titleLable: UILabel!
-    @IBOutlet  weak var contentLable: UILabel!
+    @IBOutlet  weak var titleLabel: UILabel!
+    @IBOutlet  weak var contentLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

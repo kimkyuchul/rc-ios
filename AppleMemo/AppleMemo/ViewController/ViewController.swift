@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     
     let realm = try! Realm()
     
+    var tasks: Results<Memo>?
+    
+    
     let test : [String] = ["김규철", "김규철", "김규철", "김규철"]
     let test1 : [String] = ["김규1철", "김규1철", "김규1철", "김규1철"]
 
@@ -21,6 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tasks = realm.objects(Memo.self)
         customAppearance()
         
         memoTablewView.delegate = self
@@ -34,6 +38,11 @@ class ViewController: UIViewController {
         let nibName = UINib(nibName: "TableViewCell", bundle: nil)
         self.memoTablewView.register(nibName, forCellReuseIdentifier: "memoTableViewCell")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+            memoTablewView.reloadData()
+       }
     
     //네비게이션바 커스텀
     func customAppearance() {
@@ -90,15 +99,17 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
          
          guard let cell = memoTablewView.dequeueReusableCell(withIdentifier: "memoTableViewCell") as? TableViewCell else { return UITableViewCell() }
          
-         cell.titleLable?.text = self.test[indexPath.row]
-         cell.contentLable?.text = self.test[indexPath.row]
+                  
+         cell.titleLabel.text = tasks?[indexPath.row].title
+         cell.contentLabel.text = tasks?[indexPath.row].content
+         
          
          return cell
     }
     
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         return self.test.count
+         return self.tasks?.count ?? 1
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
