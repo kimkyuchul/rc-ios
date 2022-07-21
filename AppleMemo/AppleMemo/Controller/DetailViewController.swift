@@ -11,20 +11,18 @@ import RealmSwift
 class DetailViewController: UIViewController {
     
     let realm = try! Realm()
-    
-    
-    @IBOutlet var memoTextView: UITextView!
     let appearance = UINavigationBarAppearance()
     
-    var textSpace:String = ""
-
+    @IBOutlet var memoTextView: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.navigationController?.navigationBar.tintColor = .systemOrange
         addBarButtonItem()
         
-        memoTextView.text = textSpace
+        memoTextView.text = nil
         
         
     }
@@ -37,26 +35,25 @@ class DetailViewController: UIViewController {
         
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
-    
-            
+        
+        
     }
     
     
-   
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
+        //뷰 사라질 때 다시 회색으로.. (다크모드 설정할 줄 알면 이런 코드도 필요 없을 듯)
         appearance.backgroundColor = UIColor.tertiarySystemGroupedBackground
-        
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         
         saveData()
-        print(saveData())
         
     }
     
-
+    
     
     
     func addBarButtonItem() {
@@ -64,32 +61,40 @@ class DetailViewController: UIViewController {
         self.navigationItem.rightBarButtonItems = [
             UIBarButtonItem(title: "완료", style: .plain, target: self, action:.none),
             UIBarButtonItem(image: UIImage(systemName: "ellipsis.circle"), style: .plain, target: self, action: .none)]
-        }
+    }
     
     
     func saveData() {
         
-        let title = memoTextView.text.split(separator: "\n", maxSplits: 1).map(String.init)[0]
-        let content = memoTextView.text.split(separator: "\n", maxSplits: 1).map(String.init)[1]
-        
-        let memoTask = Memo(title: title, content: content)
-        
-        if memoTextView != nil {
-        
-            try! realm.write{
-                realm.add(memoTask)
-            }
+        if !memoTextView.text.isEmpty{
+            let title = memoTextView.text.split(separator: "\n", maxSplits: 1).map(String.init)[0]
+            
+            // 제목만 추가하고 내용은 없을 시의 예외처리 필요
+            
+            let content = memoTextView.text.split(separator: "\n", maxSplits: 1).map(String.init)[1]
+            
+            let memoTask = Memo(title: title, content: content)
+            
+            if memoTextView != nil {
+                
+                try! realm.write{
+                    realm.add(memoTask)
+                }
+                
+            } /*else {
+               try! realm.write {
+               realm.delete(memoTask)
+               } */
         }
-
     }
 }
-        
 
-    
-    
-    
 
-        
 
-    
-   
+
+
+
+
+
+
+

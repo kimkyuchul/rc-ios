@@ -7,18 +7,18 @@
 
 import UIKit
 import RealmSwift
+import Network
 
 class ViewController: UIViewController {
     
     
     let realm = try! Realm()
     
-    var tasks: Results<Memo>?
+    var tasks: Results<Memo>!
     
     
-    let test : [String] = ["김규철", "김규철", "김규철", "김규철"]
-    let test1 : [String] = ["김규1철", "김규1철", "김규1철", "김규1철"]
-
+    
+    
     @IBOutlet var memoToolBar: UIToolbar!
     @IBOutlet var memoTablewView: UITableView!
     override func viewDidLoad() {
@@ -40,14 +40,14 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-           super.viewWillAppear(animated)
-            memoTablewView.reloadData()
-       }
+        super.viewWillAppear(animated)
+        memoTablewView.reloadData()
+    }
     
     //네비게이션바 커스텀
+    //MARK: - 네비게이션바 커스텀
     func customAppearance() {
         navigationItem.title = "메모"
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "ellipsis.circle"), style: .plain, target: self, action: .none)
         navigationItem.rightBarButtonItem?.tintColor =  UIColor.systemOrange
         
@@ -63,15 +63,15 @@ class ViewController: UIViewController {
         appearance.backgroundColor = UIColor.tertiarySystemGroupedBackground
         
         appearance.titleTextAttributes = [
-                       .foregroundColor : UIColor.black,
-                       .font : UIFont.boldSystemFont(ofSize: 20)
-                   ]
+            .foregroundColor : UIColor.black,
+            .font : UIFont.boldSystemFont(ofSize: 20)
+        ]
         
         
         appearance.largeTitleTextAttributes = [
             .foregroundColor : UIColor.black,
             .font : UIFont.boldSystemFont(ofSize: 40)
-                    ]
+        ]
         
         appearance.shadowColor = nil
         
@@ -91,25 +91,28 @@ class ViewController: UIViewController {
         
     }
     
-
+    
 }
 
 extension ViewController:UITableViewDelegate, UITableViewDataSource {
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         
-         guard let cell = memoTablewView.dequeueReusableCell(withIdentifier: "memoTableViewCell") as? TableViewCell else { return UITableViewCell() }
-         
-                  
-         cell.titleLabel.text = tasks?[indexPath.row].title
-         cell.contentLabel.text = tasks?[indexPath.row].content
-         
-         
-         return cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = memoTablewView.dequeueReusableCell(withIdentifier: "memoTableViewCell") as? TableViewCell else { return UITableViewCell() }
+        
+        
+        let data = tasks[indexPath.row]
+        cell.configureCell(data: data)
+        
+        //cell.titleLabel.text = tasks?[indexPath.row].title
+        //cell.contentLabel.text = tasks?[indexPath.row].content
+        
+        
+        return cell
     }
     
     
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         return self.tasks?.count ?? 1
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tasks?.count ?? 1
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -120,10 +123,33 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
     //func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     //}
     
-    
-    
-    
-    
-    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let delete = UIContextualAction(style: .destructive, title: "삭제") { action, view, success in
+            
+            // 클로저 순환참조 공부 필요
+            let memo = self.tasks[indexPath.row]
+            
+            try! self.realm.write {
+                self.realm.delete(memo)
+            }
+            
+            self.memoTablewView.deleteRows(at: [indexPath], with: .automatic)
+            
+            success(true)
+            
+        }
+        
+       return UISwipeActionsConfiguration(actions: [delete])
+        
+        
+    }
 }
+
+
+
+
+
+
+
 

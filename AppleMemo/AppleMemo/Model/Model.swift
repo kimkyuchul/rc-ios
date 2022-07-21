@@ -16,6 +16,7 @@ class Memo: Object {
     
     @Persisted(primaryKey: true) var _id: ObjectId // primaryKey
     
+    
     convenience init(title: String, content: String) {
         self.init()
         

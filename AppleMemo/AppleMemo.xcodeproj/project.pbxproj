@@ -87,13 +87,12 @@
 		69E2EE7E2883FABB00828016 /* AppleMemo */ = {
 			isa = PBXGroup;
 			children = (
-				69CBC9CB28866FFD00D7653C /* Cell */,
-				69E2EE7F2883FABB00828016 /* AppDelegate.swift */,
 				69CBC9C62886678F00D7653C /* Model */,
-				69E2EE812883FABB00828016 /* SceneDelegate.swift */,
-				69E2EE942884040D00828016 /* ViewController */,
 				69E2EE93288402F200828016 /* View */,
+				69E2EE942884040D00828016 /* Controller */,
 				69E2EE882883FABF00828016 /* Assets.xcassets */,
+				69E2EE7F2883FABB00828016 /* AppDelegate.swift */,
+				69E2EE812883FABB00828016 /* SceneDelegate.swift */,
 				69E2EE8A2883FABF00828016 /* LaunchScreen.storyboard */,
 				69E2EE8D2883FABF00828016 /* Info.plist */,
 			);
@@ -105,17 +104,18 @@
 			children = (
 				69E2EE852883FABB00828016 /* Main.storyboard */,
 				69E2EE952884278A00828016 /* Detail.storyboard */,
+				69CBC9CB28866FFD00D7653C /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		69E2EE942884040D00828016 /* ViewController */ = {
+		69E2EE942884040D00828016 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				69E2EE832883FABB00828016 /* ViewController.swift */,
 				69E2EE97288427C200828016 /* DetailViewController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
