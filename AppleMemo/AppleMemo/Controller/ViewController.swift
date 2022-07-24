@@ -16,13 +16,16 @@ class ViewController: UIViewController {
     
     var tasks: Results<Memo>!
     
-    
+    var str = "hello world"
+    let trimmedString = " abc ".trimmingCharacters(in: .whitespaces).count
     
     
     @IBOutlet var memoToolBar: UIToolbar!
     @IBOutlet var memoTablewView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(trimmedString)
         
         tasks = realm.objects(Memo.self)
         customAppearance()
@@ -127,7 +130,7 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
         
         let delete = UIContextualAction(style: .destructive, title: "삭제") { action, view, success in
             
-            // 클로저 순환참조 공부 필요
+            // 클로저 순환참조 공부 필요!
             let memo = self.tasks[indexPath.row]
             
             try! self.realm.write {
