@@ -15,8 +15,8 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet  weak var titleLabel: UILabel!
     @IBOutlet  weak var contentLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
     
@@ -30,9 +30,13 @@ class TableViewCell: UITableViewCell {
     
     
     func configureCell(data: Memo) {
-        titleLabel.text = data.title
-        contentLabel.text = data.content
+        let rowData = data.getCellData()
+        let date = DateFormatter.dateFommatterUse(date: data.createdDate)
+        
+        titleLabel.text = rowData.title
+        contentLabel.text = rowData.content
         contentLabel.numberOfLines = 1
+        dateLabel.text = date
     }
     
     

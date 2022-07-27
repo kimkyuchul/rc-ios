@@ -16,18 +16,10 @@ class ViewController: UIViewController {
     
     var tasks: Results<Memo>!
     
-    var str = "hello world"
-    let trimmedString = " abc ".trimmingCharacters(in: .whitespaces).count
-    
-    
     @IBOutlet var memoToolBar: UIToolbar!
     @IBOutlet var memoTablewView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(trimmedString)
-        
-        tasks = realm.objects(Memo.self)
         customAppearance()
         
         memoTablewView.delegate = self
@@ -44,6 +36,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        tasks = realm.objects(Memo.self)
         memoTablewView.reloadData()
     }
     
@@ -89,9 +82,8 @@ class ViewController: UIViewController {
         
         guard let VC = DetailVC.instantiateViewController(withIdentifier: "Detail") as? DetailViewController else { return }
         
+        //VC.viewMode = .create
         self.navigationController?.pushViewController(VC, animated: true)
-        
-        
     }
     
     
@@ -120,6 +112,21 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let DetailVC : UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
+        
+        guard let VC = DetailVC.instantiateViewController(withIdentifier: "Detail") as? DetailViewController else { return }
+        
+        let memo = tasks[indexPath.row]
+        
+        VC.memoTask = memo
+//        VC.viewMode = .update
+        self.navigationController?.pushViewController(VC, animated: true)
+        
+        
     }
     
     
