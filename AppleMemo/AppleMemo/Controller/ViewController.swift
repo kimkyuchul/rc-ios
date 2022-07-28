@@ -11,15 +11,20 @@ import Network
 
 class ViewController: UIViewController {
     
-    
+    //Realm 파일에 접근하는 상수 선언
     let realm = try! Realm()
     
+    //Realm에서 읽어온 데이터를 담을 배열 선언
     var tasks: Results<Memo>!
     
     @IBOutlet var memoToolBar: UIToolbar!
     @IBOutlet var memoTablewView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let fileURL = Realm.Configuration.defaultConfiguration.fileURL
+        print(fileURL!)
+
         customAppearance()
         
         memoTablewView.delegate = self
@@ -42,6 +47,7 @@ class ViewController: UIViewController {
     
     //네비게이션바 커스텀
     //MARK: - 네비게이션바 커스텀
+    //base 뷰컨으로 만들어둬서 다른 뷰컨에서 상속에서 사용
     func customAppearance() {
         navigationItem.title = "메모"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "ellipsis.circle"), style: .plain, target: self, action: .none)

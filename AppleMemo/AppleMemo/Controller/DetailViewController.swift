@@ -99,9 +99,8 @@ class DetailViewController: UIViewController {
                 // 업데이트
                 try! realm.write {
                     self.memoTask?.content = memoTextView.text
-                    self.memoTask?.updatedDate = currentDate
                     self.memoTask?.createdDate = currentDate
-                
+                    self.memoTask?.updatedDate = currentDate
                     
                 }
             } else {
