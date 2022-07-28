@@ -20,9 +20,20 @@
 가로 스크롤 뷰와 동적으로 늘어나는 스크롤뷰 구현 연습이 필요하다.
 가장 중요한 점은 코드로 ui 짜는 연습이 시급한 것 같다..
 
-
-
 <br></br>
-
 -------------------------------------------------------
+### 2.  Apple Memo App Clone 
+[링크](https://github.com/kimkyuchul/rc-ios/tree/main/AppleMemo)
+
+**`Apple Memo` iOS TableView & Realm**
+
+#### ▶︎ 실행화면
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/AppleMemo.gif" width="51%"/>
+
+#### ▶︎ 회고
+
+- Realm DB와 TableView를 함께 활용하여 만드니 CRUD 구현이 편했다.
+
 <br></br>
+-------------------------------------------------------
+
