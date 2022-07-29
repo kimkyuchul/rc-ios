@@ -35,8 +35,12 @@ class TableViewCell: UITableViewCell {
         
         titleLabel.text = rowData.title
         contentLabel.text = rowData.content
-        contentLabel.numberOfLines = 1
         dateLabel.text = date
+        
+        contentLabel.numberOfLines = 1
+        titleLabel.numberOfLines = 1
+        
+        
     }
     
     
