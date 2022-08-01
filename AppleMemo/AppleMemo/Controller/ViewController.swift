@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     //base 뷰컨으로 만들어둬서 다른 뷰컨에서 상속에서 사용
     func customAppearance() {
         navigationItem.title = "메모"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "ellipsis.circle"), style: .plain, target: self, action: .none)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "ellipsis.circle"), style: .plain, target: self, action: #selector(optionButtonTapped(sender:)))
         navigationItem.rightBarButtonItem?.tintColor =  UIColor.systemOrange
         
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -81,6 +81,27 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
+    @objc func optionButtonTapped(sender: UIBarButtonItem) {
+        
+        
+        //https://stackoverflow.com/questions/42106980/how-to-present-a-viewcontroller-on-half-screen
+        
+        if #available(iOS 15.0, *) {
+            let optionVC : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            guard let VC = optionVC.instantiateViewController(withIdentifier: "Option") as? optionViewController else { return }
+            
+            if let presentationController = VC.presentationController as? UISheetPresentationController {
+                presentationController.detents = [.medium(), .large()]
+            }
+            
+            //VC.optionTitleLabel.text = self.navigationItem.title
+            self.present(VC, animated: true)
+        }
+        
+        
+    }
+    
     
     @IBAction func writeButtonClicked(_ sender: UIBarButtonItem) {
         
@@ -102,6 +123,7 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
         
         
         let data = tasks[indexPath.row]
+        
         cell.configureCell(data: data)
         
         //cell.titleLabel.text = tasks?[indexPath.row].title
@@ -130,6 +152,7 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
         
         VC.memoTask = memo
 //        VC.viewMode = .update
+        
         self.navigationController?.pushViewController(VC, animated: true)
         
         
