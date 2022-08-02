@@ -95,7 +95,19 @@ class ViewController: UIViewController {
                 presentationController.detents = [.medium(), .large()]
             }
             
-            //VC.optionTitleLabel.text = self.navigationItem.title
+            /*
+            1. SecondVC라는 타입을 가진 VC 인스턴스 생성
+            2. 그 인스턴스 위에다가 text 프로퍼티에 값을 부착
+            3. present를 명령하면, 실제 메모리에 해당 VC를 넣고 화면을 띄우도록 명령!
+            1,2번 과정에서 인스턴스에 값을 붙이고, 3번에서 “실제"화면 전환이 일어나기 때문에, 3번을 실행하지 않으면 절대로 데이터 전달이 일어나지 않는다. 즉, 해당 VC를 push하거나 present까지 진행되어야 데이터가 전달되는 형태
+            위에서 설명한 프로퍼티에 접근해서 전달하는 방식은 대부분 화면전환이 이루어지는 과정에서 일어나는 데이터 전달이다.
+            그리고 부모 → 자식간 관계를 형성할때 (VC - View 관계) 사용하기도 한다.
+             
+            직접 프로퍼티 전달을 사용하는 경우
+            1. 이전 화면 → 다음 화면으로 화면전환을 할 때 (present, push)
+            2. 부모 → 자식 관계일 때
+             */
+            VC.titleText = self.navigationItem.title!
             self.present(VC, animated: true)
         }
         
@@ -184,8 +196,6 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
         
     }
 }
-
-
 
 
 

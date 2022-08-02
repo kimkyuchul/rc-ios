@@ -7,23 +7,26 @@
 
 import UIKit
 
+
+
 class optionViewController: UIViewController {
 
     @IBOutlet var optionTitleLabel: UILabel!
     @IBOutlet var optionTitleImage: UIImageView!
+    var titleText : String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        customUI()
 
     }
     
     
     func customUI() {
-        
-        optionTitleImage.image = UIImage(named: "foder.fill")
+        self.view.backgroundColor = UIColor.tertiarySystemGroupedBackground
+        optionTitleImage.image = UIImage(systemName:"folder.fill")
+        optionTitleLabel.text = titleText
+        optionTitleLabel.sizeToFit()
     }
-    
-    
-    
-
-
 }
