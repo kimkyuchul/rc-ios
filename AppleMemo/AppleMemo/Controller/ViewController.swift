@@ -83,7 +83,6 @@ class ViewController: UIViewController {
     
     @objc func optionButtonTapped(sender: UIBarButtonItem) {
         
-        
         //https://stackoverflow.com/questions/42106980/how-to-present-a-viewcontroller-on-half-screen
         
         if #available(iOS 15.0, *) {
