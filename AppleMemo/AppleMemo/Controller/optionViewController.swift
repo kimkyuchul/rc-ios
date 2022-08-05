@@ -16,12 +16,11 @@ class optionViewController: UIViewController {
     @IBOutlet var optionTitleLabel: UILabel!
     @IBOutlet var optionTitleImage: UIImageView!
     
-    private var dataSource = [SettingSection]()
-    
+    let list = SettingSection.generateData()
     var titleText : String?
     
     
-    
+    /*
     private func refresh() {
     
     let optionModels1 = [
@@ -40,13 +39,13 @@ class optionViewController: UIViewController {
         
         self.dataSource = [optionSection1, optionSection2]
         self.optionTableView.reloadData()
-    
     }
+     */
     
     override func viewDidLoad() {
         super.viewDidLoad()
         customUI()
-        self.refresh()
+        //self.refresh()
         optionTableView.delegate = self
         optionTableView.dataSource = self
         
@@ -73,51 +72,45 @@ class optionViewController: UIViewController {
     }
 }
 
+//https://velog.io/@din0121/Swift-Table-View-Multi-Section
 extension optionViewController:UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch self.dataSource[section] {
-        case let .option1(optionModels1):
-            return optionModels1.count
-        case let .option2(optionModel2):
-            return optionModel2.count
-        }
+        return list[section].items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            switch self.dataSource[indexPath.section] {
-            case let .option1(optionModels1):
-                let cell = optionTableView.dequeueReusableCell(withIdentifier: "optionTableViewCell", for: indexPath) as! optionTableViewCell
-                let optionModelOne = optionModels1[indexPath.row]
-                cell.configureCell(icon: optionModelOne.iconImage, titleText: optionModelOne.title)
-                return cell
-            case let .option2(optionModels2):
-                let cell = optionTableView.dequeueReusableCell(withIdentifier: "optionTableViewCell", for: indexPath) as! optionTableViewCell
-                let optionModelTwo = optionModels2[indexPath.row]
-                cell.configureCell(icon: optionModelTwo.iconImage, titleText: optionModelTwo.title)
-                return cell
-            }
+        
+        let target = list[indexPath.section].items[indexPath.row] // 셀에 표시할 데이터 가져옴
+        guard let cell = optionTableView.dequeueReusableCell(withIdentifier: "optionTableViewCell") as? optionTableViewCell else { return UITableViewCell() }
+        
+        switch target.type {
+        case .detailTitle:
+            cell.optionTableViewLabel?.text = target.title
+            cell.optionTableViewImage?.image = target.iconImage
+        case .rightDetail:
+            cell.optionTableViewLabel?.text = target.title
+            cell.optionTableViewImage?.image = target.iconImage
+            
+        }
+        return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.dataSource.count
+        return self.list.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch self.dataSource[indexPath.section] {
-        case let .option1(optionModels1):
-            let optionModelOne = optionModels1[indexPath.row]
-            if optionModelOne.title == "정보" {
-                let optionVC : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                guard let VC = optionVC.instantiateViewController(withIdentifier: "infoViewController") as? infoViewController else { return }
-                self.present(VC, animated: true)
+        
+        let target = list[indexPath.section]
+        switch target.items {
+        case 0:
+            if target.items[indexPath.row] == 0 {
+                
             }
-        case let .option2(optionModels2):
-            break
         }
-        
-        
-        
-    }
+            
+        }
+    
     
     
 }
