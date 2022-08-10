@@ -10,7 +10,7 @@ import UIKit
 
 
 class optionViewController: UIViewController {
-
+    
     @IBOutlet var optionTableView: UITableView!
     @IBOutlet var optionXbutton: UIButton!
     @IBOutlet var optionTitleLabel: UILabel!
@@ -21,25 +21,25 @@ class optionViewController: UIViewController {
     
     
     /*
-    private func refresh() {
-    
-    let optionModels1 = [
-        optionOne(title: "갤러리로보기", iconImage: UIImage(systemName: "pencil")),
-        optionOne(title: "정보", iconImage: UIImage(systemName: "square.and.arrow.up.fill")),
-      ]
-    let optionSection1 = SettingSection.option1(optionModels1)
-        
-    
-    let optionModels2 = [
-            optionTwo(title: "메모 선택", iconImage: UIImage(systemName: "pencil")),
-            optionTwo(title: "기본값 순서로 메모 정렬", iconImage: UIImage(systemName: "square.and.arrow.up.fill")),
-            optionTwo(title: "첨부 파일 보기", iconImage: UIImage(systemName: "paperplane.fill"))
-          ]
-    let optionSection2 = SettingSection.option2(optionModels2)
-        
-        self.dataSource = [optionSection1, optionSection2]
-        self.optionTableView.reloadData()
-    }
+     private func refresh() {
+     
+     let optionModels1 = [
+     optionOne(title: "갤러리로보기", iconImage: UIImage(systemName: "pencil")),
+     optionOne(title: "정보", iconImage: UIImage(systemName: "square.and.arrow.up.fill")),
+     ]
+     let optionSection1 = SettingSection.option1(optionModels1)
+     
+     
+     let optionModels2 = [
+     optionTwo(title: "메모 선택", iconImage: UIImage(systemName: "pencil")),
+     optionTwo(title: "기본값 순서로 메모 정렬", iconImage: UIImage(systemName: "square.and.arrow.up.fill")),
+     optionTwo(title: "첨부 파일 보기", iconImage: UIImage(systemName: "paperplane.fill"))
+     ]
+     let optionSection2 = SettingSection.option2(optionModels2)
+     
+     self.dataSource = [optionSection1, optionSection2]
+     self.optionTableView.reloadData()
+     }
      */
     
     override func viewDidLoad() {
@@ -52,13 +52,12 @@ class optionViewController: UIViewController {
         let nibName = UINib(nibName: "optionTableViewCell", bundle: nil)
         self.optionTableView.register(nibName, forCellReuseIdentifier: "optionTableViewCell")
         
-        optionTableView.backgroundColor = UIColor.tertiarySystemGroupedBackground
-
     }
     
     
     func customUI() {
         self.view.backgroundColor = UIColor.tertiarySystemGroupedBackground
+        optionTableView.backgroundColor = UIColor.tertiarySystemGroupedBackground
         optionTitleImage.image = UIImage(systemName:"folder.fill")
         optionTitleLabel.text = titleText
         optionTitleLabel.sizeToFit()
@@ -101,16 +100,56 @@ extension optionViewController:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let target = list[indexPath.section]
-        switch target.items {
-        case 0:
-            if target.items[indexPath.row] == 0 {
+        let target = list[indexPath.section].items[indexPath.row]
+        
+        switch target.type {
+        case .detailTitle:
+            if indexPath.row == 0 {
                 
+                print("1")
+                let infoVC : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let VC = infoVC.instantiateViewController(withIdentifier: "infoViewController") as? infoViewController else { return }
+                self.present(VC, animated: true)
             }
-        }
+            if indexPath.row == 1 {
+                
+                let infoVC : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let VC = infoVC.instantiateViewController(withIdentifier: "infoViewController") as? infoViewController else { return }
+                self.present(VC, animated: true)
+            }
+        case .rightDetail:
+            if indexPath.row == 0 {
+                
+                let infoVC : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let VC = infoVC.instantiateViewController(withIdentifier: "infoViewController") as? infoViewController else { return }
+                self.present(VC, animated: true)
+            }
+            
+            if indexPath.row == 1 {
+                
+                let infoVC : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let VC = infoVC.instantiateViewController(withIdentifier: "infoViewController") as? infoViewController else { return }
+                self.present(VC, animated: true)
+            }
+            
+            if indexPath.row == 2 {
+                
+                let infoVC : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let VC = infoVC.instantiateViewController(withIdentifier: "infoViewController") as? infoViewController else { return }
+                self.present(VC, animated: true)
+            }
+            
+            if indexPath.row == 3 {
+                
+                let infoVC : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let VC = infoVC.instantiateViewController(withIdentifier: "infoViewController") as? infoViewController else { return }
+                self.present(VC, animated: true)
+            }
+            
+            
             
         }
-    
-    
+        
+    }
     
 }
