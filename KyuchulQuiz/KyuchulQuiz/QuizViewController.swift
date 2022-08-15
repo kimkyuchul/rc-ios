@@ -52,7 +52,7 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func nextAction(_ sender: Any) {
-    
+        
             if index < (questions?.count ?? 0) - 1 {
                 index += 1
                 self.quizCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
@@ -101,6 +101,7 @@ extension QuizViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         let data = questions?[indexPath.row]
         cell.configureCell(data: data!)
+        
         
         return cell
     }

@@ -153,7 +153,7 @@ Kyu-Chul Kim?</string>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8mm-2b-BM6">
                                                             <rect key="frame" x="0.0" y="0.0" width="354" height="169.5"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJ2-UH-pY0">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJ2-UH-pY0" customClass="UIControl">
                                                                     <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toe-fU-S2t">
@@ -171,8 +171,11 @@ Kyu-Chul Kim?</string>
                                                                         <constraint firstAttribute="bottom" secondItem="Toe-fU-S2t" secondAttribute="bottom" constant="20" id="Sb0-zQ-szQ"/>
                                                                         <constraint firstItem="Toe-fU-S2t" firstAttribute="top" secondItem="xJ2-UH-pY0" secondAttribute="top" constant="20" id="o7V-ba-mE1"/>
                                                                     </constraints>
+                                                                    <connections>
+                                                                        <action selector="option1Action:" destination="dwb-LQ-alX" eventType="touchUpInside" id="1Bc-mH-ydf"/>
+                                                                    </connections>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNW-IJ-F57">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNW-IJ-F57" customClass="UIControl">
                                                                     <rect key="frame" x="184.5" y="0.0" width="169.5" height="169.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOC-Y6-GW5">
@@ -190,13 +193,16 @@ Kyu-Chul Kim?</string>
                                                                         <constraint firstItem="xOC-Y6-GW5" firstAttribute="leading" secondItem="JNW-IJ-F57" secondAttribute="leading" constant="20" id="bec-Yg-rlp"/>
                                                                         <constraint firstItem="xOC-Y6-GW5" firstAttribute="top" secondItem="JNW-IJ-F57" secondAttribute="top" constant="20" id="iLT-67-E7q"/>
                                                                     </constraints>
+                                                                    <connections>
+                                                                        <action selector="option2Action:" destination="dwb-LQ-alX" eventType="touchUpInside" id="HVP-qD-ehZ"/>
+                                                                    </connections>
                                                                 </view>
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="olQ-pv-4DY">
                                                             <rect key="frame" x="0.0" y="184.5" width="354" height="169.5"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BC-At-Pp6">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BC-At-Pp6" customClass="UIControl">
                                                                     <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prO-PT-9jI">
@@ -214,8 +220,11 @@ Kyu-Chul Kim?</string>
                                                                         <constraint firstItem="prO-PT-9jI" firstAttribute="leading" secondItem="3BC-At-Pp6" secondAttribute="leading" constant="20" id="Zlr-UV-ltH"/>
                                                                         <constraint firstAttribute="trailing" secondItem="prO-PT-9jI" secondAttribute="trailing" constant="20" id="hoi-YA-XDV"/>
                                                                     </constraints>
+                                                                    <connections>
+                                                                        <action selector="option3Action:" destination="dwb-LQ-alX" eventType="touchUpInside" id="251-61-ndE"/>
+                                                                    </connections>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bhb-6B-8Iw">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bhb-6B-8Iw" customClass="UIControl">
                                                                     <rect key="frame" x="184.5" y="0.0" width="169.5" height="169.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrX-kr-mWg">
@@ -233,6 +242,9 @@ Kyu-Chul Kim?</string>
                                                                         <constraint firstAttribute="bottom" secondItem="MrX-kr-mWg" secondAttribute="bottom" constant="20" id="IIU-S0-tFk"/>
                                                                         <constraint firstAttribute="trailing" secondItem="MrX-kr-mWg" secondAttribute="trailing" constant="20" id="OLl-I5-iSP"/>
                                                                     </constraints>
+                                                                    <connections>
+                                                                        <action selector="option4Action:" destination="dwb-LQ-alX" eventType="touchUpInside" id="zSB-Tz-gLc"/>
+                                                                    </connections>
                                                                 </view>
                                                             </subviews>
                                                         </stackView>
@@ -252,9 +264,13 @@ Kyu-Chul Kim?</string>
                                         <size key="customSize" width="414" height="758"/>
                                         <connections>
                                             <outlet property="option1Label" destination="Toe-fU-S2t" id="P7Q-C7-vhz"/>
+                                            <outlet property="option1View" destination="xJ2-UH-pY0" id="hzd-mj-uQL"/>
                                             <outlet property="option2Label" destination="xOC-Y6-GW5" id="e0G-Ve-xay"/>
+                                            <outlet property="option2View" destination="JNW-IJ-F57" id="Osu-gF-usq"/>
                                             <outlet property="option3Label" destination="prO-PT-9jI" id="iLs-M9-pAQ"/>
+                                            <outlet property="option3View" destination="3BC-At-Pp6" id="vpQ-EY-hpV"/>
                                             <outlet property="option4Label" destination="MrX-kr-mWg" id="iIH-YD-qoo"/>
+                                            <outlet property="option4View" destination="Bhb-6B-8Iw" id="Npf-pQ-ztm"/>
                                             <outlet property="questionLabel" destination="dza-Nf-TZu" id="AV1-lk-Llg"/>
                                         </connections>
                                     </collectionViewCell>
