@@ -11,11 +11,14 @@ class QuizViewController: UIViewController {
     
     var questions:[Questions]?
     var datamodel:DataModel?
-
     
+    var isAnswer = false
+
+    var point = 0
     var index = 0
     
     
+    @IBOutlet var quizCount: UILabel!
     @IBOutlet var quizCollectionView: UICollectionView!
     @IBOutlet var nextButton: UIButton! {
         didSet {
@@ -34,13 +37,16 @@ class QuizViewController: UIViewController {
         self.quizCollectionView.delegate = self
         self.quizCollectionView.dataSource = self
         getQuizData()
+        nextButton.isEnabled = false
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.navigationController?.isNavigationBarHidden = true
+        self.view.backgroundColor = UIColor.systemGray3
+        self.quizCollectionView.backgroundColor = UIColor.systemGray3
+        NotificationCenter.default.addObserver(self, selector: #selector(nextButtonEnable(_:)), name: Notification.Name("nextButtonEnable"), object: nil)
         
     }
 
@@ -53,11 +59,37 @@ class QuizViewController: UIViewController {
     
     @IBAction func nextAction(_ sender: Any) {
         
+        
+            if isAnswer {
+                point += 1
+                
+            }
+
             if index < (questions?.count ?? 0) - 1 {
                 index += 1
                 self.quizCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
+                nextButton.isEnabled = false
+            } else {
+                UserDefaults.standard.set(point, forKey: "APPpoint")
+                guard let VC = storyboard?.instantiateViewController(withIdentifier: "QuizResultViewController") as? QuizResultViewController else { return }
+                VC.result = point
+                self.navigationController?.pushViewController(VC, animated: true)
+                
             }
+    
         }
+    
+    @objc func nextButtonEnable(_ noti: Notification) {
+        nextButton.isEnabled = true
+    }
+    
+    func getProgress() -> Float {
+        return Float(index) / Float(questions?.count ?? 0)
+    }
+    
+
+    
+    
     /*
      - URLSession Life Cycle0
      session configuration 결정, session 생성
@@ -99,9 +131,16 @@ extension QuizViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = quizCollectionView.dequeueReusableCell(withReuseIdentifier: "QuizCollectionViewCell", for: indexPath) as? QuizCollectionViewCell else { return QuizCollectionViewCell() }
         
-        let data = questions?[indexPath.row]
-        cell.configureCell(data: data!)
-        
+        //let data = questions?[indexPath.row]
+        //cell.configureCell(data: data!)
+        cell.quizmodel = questions?[indexPath.row]
+        cell.option1View.layer.cornerRadius = 15
+        cell.option2View.layer.cornerRadius = 15
+        cell.option3View.layer.cornerRadius = 15
+        cell.option4View.layer.cornerRadius = 15
+        cell.selectedAnswer = { [weak self] isAnswer in
+            self?.isAnswer = isAnswer
+        }
         
         return cell
     }

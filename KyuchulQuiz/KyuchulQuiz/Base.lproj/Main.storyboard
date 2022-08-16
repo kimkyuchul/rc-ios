@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -127,8 +128,8 @@ Kyu-Chul Kim?</string>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Onx-eW-8uc">
                                 <rect key="frame" x="0.0" y="114" width="414" height="748"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3Wq-KN-oVq">
-                                    <size key="itemSize" width="414" height="758"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pde-tC-l5d">
+                                    <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -276,13 +277,21 @@ Kyu-Chul Kim?</string>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eay-Ym-W7U">
+                                <rect key="frame" x="199.5" y="66.5" width="15.5" height="25"/>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TAF-en-xe5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TME-ig-WjN" firstAttribute="leading" secondItem="TAF-en-xe5" secondAttribute="leading" constant="20" id="Mgy-2q-RN7"/>
+                            <constraint firstItem="eay-Ym-W7U" firstAttribute="centerY" secondItem="TME-ig-WjN" secondAttribute="centerY" id="R2K-Qz-hH1"/>
                             <constraint firstItem="Onx-eW-8uc" firstAttribute="leading" secondItem="TAF-en-xe5" secondAttribute="leading" id="WUM-sk-Y9z"/>
                             <constraint firstItem="TME-ig-WjN" firstAttribute="top" secondItem="TAF-en-xe5" secondAttribute="top" constant="10" id="eOm-EC-Zqt"/>
+                            <constraint firstItem="eay-Ym-W7U" firstAttribute="centerX" secondItem="jTa-HZ-drK" secondAttribute="centerX" id="g2j-WV-g2t"/>
                             <constraint firstItem="TAF-en-xe5" firstAttribute="trailing" secondItem="Onx-eW-8uc" secondAttribute="trailing" id="hOw-kk-4js"/>
                             <constraint firstItem="Onx-eW-8uc" firstAttribute="top" secondItem="9EG-gm-2DP" secondAttribute="bottom" constant="10" id="jOw-Zg-CkW"/>
                             <constraint firstItem="TAF-en-xe5" firstAttribute="bottom" secondItem="Onx-eW-8uc" secondAttribute="bottom" id="oJr-rC-ebH"/>
@@ -294,11 +303,79 @@ Kyu-Chul Kim?</string>
                         <outlet property="exitButton" destination="TME-ig-WjN" id="bUk-jK-wni"/>
                         <outlet property="nextButton" destination="9EG-gm-2DP" id="GsU-pK-qoR"/>
                         <outlet property="quizCollectionView" destination="Onx-eW-8uc" id="gqQ-nP-mxR"/>
+                        <outlet property="quizCount" destination="eay-Ym-W7U" id="fae-ve-4zU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iyx-N7-0bI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1750.7246376811595" y="118.52678571428571"/>
+        </scene>
+        <!--Quiz Result View Controller-->
+        <scene sceneID="6h5-vP-jV5">
+            <objects>
+                <viewController storyboardIdentifier="QuizResultViewController" id="46M-0Q-WQ3" customClass="QuizResultViewController" customModule="KyuchulQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bbu-BP-Tvf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R78-A5-Pqj">
+                                <rect key="frame" x="147" y="458" width="120.5" height="80"/>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dBi-MV-bXj">
+                                <rect key="frame" x="87" y="117.5" width="240" height="155.5"/>
+                                <imageReference key="image" image="heart" catalog="system" symbolScale="default"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="150" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-XM-fnc">
+                                <rect key="frame" x="10" y="378" width="394" height="30"/>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsV-pd-axb">
+                                <rect key="frame" x="20" y="612" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YY2-xW-6uL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="HOME">
+                                    <fontDescription key="titleFontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V5h-yi-qIl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fgD-Be-g6g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CUw-XM-fnc" firstAttribute="leading" secondItem="fgD-Be-g6g" secondAttribute="leading" constant="10" id="2QT-v9-iM8"/>
+                            <constraint firstItem="R78-A5-Pqj" firstAttribute="centerX" secondItem="Bbu-BP-Tvf" secondAttribute="centerX" id="5Z1-Yp-5Zg"/>
+                            <constraint firstItem="dBi-MV-bXj" firstAttribute="top" secondItem="fgD-Be-g6g" secondAttribute="top" constant="58.5" id="9Zf-9k-q0z"/>
+                            <constraint firstItem="fgD-Be-g6g" firstAttribute="trailing" secondItem="dBi-MV-bXj" secondAttribute="trailing" constant="87" id="BMs-xv-qre"/>
+                            <constraint firstItem="UsV-pd-axb" firstAttribute="top" secondItem="R78-A5-Pqj" secondAttribute="bottom" constant="74" id="Bcj-kz-EBN"/>
+                            <constraint firstItem="fgD-Be-g6g" firstAttribute="trailing" secondItem="CUw-XM-fnc" secondAttribute="trailing" constant="10" id="FJO-sg-5ZW"/>
+                            <constraint firstItem="R78-A5-Pqj" firstAttribute="top" secondItem="CUw-XM-fnc" secondAttribute="bottom" constant="50" id="GIm-To-4Cs"/>
+                            <constraint firstItem="dBi-MV-bXj" firstAttribute="leading" secondItem="fgD-Be-g6g" secondAttribute="leading" constant="87" id="aiR-7u-ZqS"/>
+                            <constraint firstItem="fgD-Be-g6g" firstAttribute="trailing" secondItem="UsV-pd-axb" secondAttribute="trailing" constant="20" id="bE5-On-XLs"/>
+                            <constraint firstItem="UsV-pd-axb" firstAttribute="leading" secondItem="fgD-Be-g6g" secondAttribute="leading" constant="20" id="gqK-uB-IEt"/>
+                            <constraint firstItem="R78-A5-Pqj" firstAttribute="centerY" secondItem="Bbu-BP-Tvf" secondAttribute="centerY" constant="50" id="rjb-8K-wzW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultImageView" destination="dBi-MV-bXj" id="2Kk-RV-hO4"/>
+                        <outlet property="resultLabel" destination="R78-A5-Pqj" id="5Rn-Yj-WG0"/>
+                        <outlet property="resultMessageLabel" destination="CUw-XM-fnc" id="uuX-Z6-ikd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCe-LY-iKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2455" y="119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bpK-51-lyV">
@@ -320,6 +397,7 @@ Kyu-Chul Kim?</string>
         </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

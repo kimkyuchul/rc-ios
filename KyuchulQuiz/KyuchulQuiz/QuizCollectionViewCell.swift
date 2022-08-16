@@ -16,19 +16,36 @@ enum selectedOption {
 
 class QuizCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var option1Label: UILabel!
-    @IBOutlet var option2Label: UILabel!
-    @IBOutlet var option3Label: UILabel!
-    @IBOutlet var option4Label: UILabel!
-    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet weak var option1Label: UILabel!
+    @IBOutlet weak var option2Label: UILabel!
+    @IBOutlet weak var option3Label: UILabel!
+    @IBOutlet weak var option4Label: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
+    
+    
+    var quizmodel : Questions? {
+        didSet {
+            questionLabel.text = quizmodel?.question
+            
+            option1Label.text = quizmodel?.option_1
+            option2Label.text = quizmodel?.option_2
+            option3Label.text = quizmodel?.option_3
+            option4Label.text = quizmodel?.option_4
+            
+            correntAnswer = quizmodel?.correct_answer
+        }
+    }
+    
+    var quizManager = QuizManager()
     
     private var correntAnswer: String?
+     
     
     
-    @IBOutlet var option1View: UIControl!
-    @IBOutlet var option2View: UIControl!
-    @IBOutlet var option3View: UIControl!
-    @IBOutlet var option4View: UIControl!
+    @IBOutlet weak var option1View: UIControl!
+    @IBOutlet weak var option2View: UIControl!
+    @IBOutlet weak var option3View: UIControl!
+    @IBOutlet weak var option4View: UIControl!
     
     
     
@@ -38,7 +55,7 @@ class QuizCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    
+    /*
     func configureCell(data: Questions) {
         
         questionLabel.text = data.question
@@ -47,50 +64,95 @@ class QuizCollectionViewCell: UICollectionViewCell {
         option2Label.text = data.option_2
         option3Label.text = data.option_3
         option4Label.text = data.option_4
-        
-        correntAnswer = data.correct_answer
+    }
+     */
+    
+    //셀을 초기화
+    override func prepareForReuse() {
+        updateUI(uiView: option1View)
+        updateUI(uiView: option2View)
+        updateUI(uiView: option3View)
+        updateUI(uiView: option4View)
     }
     
+    var selectedAnswer: ((_ seletedAnswer: Bool) -> Void)?
    
-    @IBAction func option1Action(_ sender: Any) {
+     @IBAction func option1Action(_ sender: Any) {
+         NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
         changeUI(selectedOption: .optionA)
+        
+         var isAnswer = false
+         
+         if correntAnswer == quizmodel?.option_1 {
+             isAnswer = true
+         }
+         
+         selectedAnswer?(isAnswer)
     }
     
 
-    @IBAction func option2Action(_ sender: Any) {
+     @IBAction func option2Action(_ sender: Any) {
+         NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
         changeUI(selectedOption: .optionB)
+         
+         var isAnswer = false
+         if correntAnswer == quizmodel?.option_2 {
+             isAnswer = true
+         }
+         
+         selectedAnswer?(isAnswer)
     }
     
     
-    @IBAction func option3Action(_ sender: Any) {
+     @IBAction func option3Action(_ sender: Any) {
+         NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
         changeUI(selectedOption: .optionC)
+         
+         var isAnswer = false
+         
+         if correntAnswer == quizmodel?.option_3 {
+             isAnswer = true
+         }
+         
+         selectedAnswer?(isAnswer)
     }
     
     
-    @IBAction func option4Action(_ sender: Any) {
+     @IBAction func option4Action(_ sender: Any) {
+         NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
         changeUI(selectedOption: .optionD)
+         
+         var isAnswer = false
+         
+         if correntAnswer == quizmodel?.option_4 {
+             isAnswer = true
+         }
+         
+         selectedAnswer?(isAnswer)
+         
+         
     }
     
     
     func changeUI(selectedOption: selectedOption) {
         switch selectedOption {
         case .optionA:
-            updateUI(uiView: option1View, borderWidth: 4)
+            updateUI(uiView: option1View, borderWidth: 8)
             updateUI(uiView: option2View)
             updateUI(uiView: option3View)
             updateUI(uiView: option4View)
         case .optionB:
-            updateUI(uiView: option2View, borderWidth: 4)
+            updateUI(uiView: option2View, borderWidth: 8)
             updateUI(uiView: option1View)
             updateUI(uiView: option3View)
             updateUI(uiView: option4View)
         case .optionC:
-            updateUI(uiView: option3View, borderWidth: 4)
+            updateUI(uiView: option3View, borderWidth: 8)
             updateUI(uiView: option2View)
             updateUI(uiView: option1View)
             updateUI(uiView: option4View)
         case .optionD:
-            updateUI(uiView: option4View, borderWidth: 4)
+            updateUI(uiView: option4View, borderWidth: 8)
             updateUI(uiView: option2View)
             updateUI(uiView: option3View)
             updateUI(uiView: option1View)
@@ -103,8 +165,6 @@ class QuizCollectionViewCell: UICollectionViewCell {
         uiView.layer.borderWidth = borderWidth
         uiView.layer.borderColor = UIColor.white.cgColor
     }
-    
-    
     /*
     @IBAction func tabBackgroudColorButton(_ sender: UIAction) {
         
