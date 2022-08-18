@@ -83,7 +83,64 @@ Kyu-Chul Kim?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
+            <point key="canvasLocation" x="961" y="119"/>
+        </scene>
+        <!--Name View Controller-->
+        <scene sceneID="6is-hj-thR">
+            <objects>
+                <viewController storyboardIdentifier="NameViewController" id="RNb-Vg-95x" customClass="NameViewController" customModule="KyuchulQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CRT-Fi-eBF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, write your name to join the game." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYa-eA-3ke">
+                                <rect key="frame" x="10" y="94" width="394" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="rhi-2y-0yl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nAI-4Y-a1p">
+                                <rect key="frame" x="20" y="204" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hMF-6u-vqU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTb-tc-Rzz">
+                                <rect key="frame" x="20" y="296" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SJL-Fc-bea"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PLAY">
+                                    <fontDescription key="titleFontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sw9-SI-wgf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g1U-Tl-OxU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nAI-4Y-a1p" firstAttribute="leading" secondItem="g1U-Tl-OxU" secondAttribute="leading" constant="20" id="1bt-oE-d4k"/>
+                            <constraint firstItem="g1U-Tl-OxU" firstAttribute="trailing" secondItem="ZYa-eA-3ke" secondAttribute="trailing" constant="10" id="IUe-mO-2IM"/>
+                            <constraint firstItem="ZYa-eA-3ke" firstAttribute="top" secondItem="g1U-Tl-OxU" secondAttribute="top" constant="50" id="huA-Ci-YxH"/>
+                            <constraint firstItem="ZYa-eA-3ke" firstAttribute="leading" secondItem="g1U-Tl-OxU" secondAttribute="leading" constant="10" id="nGo-I2-RI6"/>
+                            <constraint firstItem="nAI-4Y-a1p" firstAttribute="top" secondItem="ZYa-eA-3ke" secondAttribute="bottom" constant="30" id="vIW-8A-Z7W"/>
+                            <constraint firstItem="g1U-Tl-OxU" firstAttribute="trailing" secondItem="nAI-4Y-a1p" secondAttribute="trailing" constant="20" id="wZp-Vc-rAc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xaI-ay-c9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702.8985507246377" y="128.57142857142856"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="42D-GV-gCJ">
@@ -142,12 +199,6 @@ Kyu-Chul Kim?</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="758"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dza-Nf-TZu">
-                                                    <rect key="frame" x="20" y="100" width="374" height="244"/>
-                                                    <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SqZ-WJ-kQG">
                                                     <rect key="frame" x="30" y="374" width="354" height="354"/>
                                                     <subviews>
@@ -251,6 +302,12 @@ Kyu-Chul Kim?</string>
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dza-Nf-TZu">
+                                                    <rect key="frame" x="20" y="100" width="374" height="244"/>
+                                                    <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="dza-Nf-TZu" secondAttribute="trailing" constant="20" id="4cY-dT-ZlR"/>
@@ -308,7 +365,7 @@ Kyu-Chul Kim?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iyx-N7-0bI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750.7246376811595" y="118.52678571428571"/>
+            <point key="canvasLocation" x="2388" y="119"/>
         </scene>
         <!--Quiz Result View Controller-->
         <scene sceneID="6h5-vP-jV5">
@@ -347,6 +404,7 @@ Kyu-Chul Kim?</string>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="HomeAction:" destination="46M-0Q-WQ3" eventType="touchUpInside" id="Fdh-5k-8Ha"/>
                                     <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V5h-yi-qIl"/>
                                 </connections>
                             </button>
@@ -375,11 +433,12 @@ Kyu-Chul Kim?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCe-LY-iKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2455" y="119"/>
+            <point key="canvasLocation" x="3065" y="119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bpK-51-lyV">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBe-bI-9up" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WDv-bu-r4T" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RBC-wv-rR9">
@@ -391,7 +450,6 @@ Kyu-Chul Kim?</string>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3b3-pT-R3a"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nBe-bI-9up" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>

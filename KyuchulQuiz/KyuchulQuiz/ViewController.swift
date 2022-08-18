@@ -30,9 +30,15 @@ class ViewController: UIViewController {
     
     @IBAction func playAction(_ sender: Any)  {
         
-        guard let VC = storyboard?.instantiateViewController(withIdentifier: "QuizViewController") as? QuizViewController else { return }
+        guard let VC = storyboard?.instantiateViewController(withIdentifier: "NameViewController") as? NameViewController else { return }
         
-        self.navigationController?.pushViewController(VC, animated: true)
+        if let presentationController = VC.presentationController as? UISheetPresentationController {
+                        presentationController.detents = [.medium()]
+                    }
+        
+        self.present(VC, animated: true)
+        
+        //self.navigationController?.pushViewController(VC, animated: true)
         
     }
     
