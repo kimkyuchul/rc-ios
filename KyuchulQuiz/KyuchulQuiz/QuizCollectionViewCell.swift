@@ -163,7 +163,7 @@ class QuizCollectionViewCell: UICollectionViewCell {
     
     func updateUI(uiView: UIView, borderWidth: CGFloat = 0) {
         uiView.layer.borderWidth = borderWidth
-        uiView.layer.borderColor = UIColor.white.cgColor
+        uiView.layer.borderColor = UIColor.systemGray3.cgColor
     }
     /*
     @IBAction func tabBackgroudColorButton(_ sender: UIAction) {

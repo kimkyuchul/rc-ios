@@ -18,7 +18,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KyuchulQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="KyuchulQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,8 +32,8 @@ Kyu-Chul Kim?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="No2-XE-HJY">
-                                <rect key="frame" x="20" y="522" width="374" height="125"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="cDo-cs-BW2">
+                                <rect key="frame" x="20" y="522" width="374" height="123"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RU-lZ-2Cl">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -50,35 +50,57 @@ Kyu-Chul Kim?</string>
                                             <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZRf-nY-R5e"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LH-tJ-285">
-                                        <rect key="frame" x="0.0" y="75" width="374" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9q-nK-Bhh">
+                                        <rect key="frame" x="0.0" y="73" width="374" height="50"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="1ud-W6-89b"/>
+                                            <constraint firstAttribute="height" constant="50" id="85q-VV-m9Q"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Developer Sponsorship">
+                                        <state key="normal" title="SHOW RANK">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="showRankAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0g-jV-z1y"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3LH-tJ-285">
+                                <rect key="frame" x="50" y="665" width="314" height="33.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Developer Sponsorship">
+                                            <attributes>
+                                                <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ld2-PD-1hP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7T8-GW-Vol"/>
-                            <constraint firstItem="No2-XE-HJY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RUW-hn-sqy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3LH-tJ-285" secondAttribute="trailing" constant="50" id="7nA-SH-zOG"/>
+                            <constraint firstItem="3LH-tJ-285" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="HJ7-5A-JVX"/>
+                            <constraint firstItem="cDo-cs-BW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hyc-vz-2SN"/>
                             <constraint firstItem="ld2-PD-1hP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="TTx-8a-fwN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="No2-XE-HJY" secondAttribute="trailing" constant="20" id="Wde-7O-a70"/>
-                            <constraint firstItem="No2-XE-HJY" firstAttribute="top" secondItem="ld2-PD-1hP" secondAttribute="bottom" constant="149" id="txx-Np-Zb3"/>
+                            <constraint firstItem="cDo-cs-BW2" firstAttribute="top" secondItem="ld2-PD-1hP" secondAttribute="bottom" constant="149" id="Ydv-ty-GjU"/>
+                            <constraint firstItem="3LH-tJ-285" firstAttribute="top" secondItem="e9q-nK-Bhh" secondAttribute="bottom" constant="20" id="fyM-8I-RAi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cDo-cs-BW2" secondAttribute="trailing" constant="20" id="lHk-y7-Xda"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Iar-fL-d19"/>
                     <connections>
                         <outlet property="playButton" destination="8RU-lZ-2Cl" id="aDp-2E-x9k"/>
-                        <outlet property="sponsorshipButton" destination="3LH-tJ-285" id="wjY-G1-Nva"/>
+                        <outlet property="showRankButton" destination="e9q-nK-Bhh" id="63y-64-YoC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,18 +132,19 @@ Kyu-Chul Kim?</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTb-tc-Rzz">
-                                <rect key="frame" x="20" y="296" width="374" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTb-tc-Rzz">
+                                <rect key="frame" x="20" y="299" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="SJL-Fc-bea"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="PLAY">
+                                <buttonConfiguration key="configuration" style="plain" title="GO!">
                                     <fontDescription key="titleFontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="goAction:" destination="RNb-Vg-95x" eventType="touchUpInside" id="AkY-gB-ud2"/>
                                     <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sw9-SI-wgf"/>
                                 </connections>
                             </button>
@@ -131,12 +154,19 @@ Kyu-Chul Kim?</string>
                         <constraints>
                             <constraint firstItem="nAI-4Y-a1p" firstAttribute="leading" secondItem="g1U-Tl-OxU" secondAttribute="leading" constant="20" id="1bt-oE-d4k"/>
                             <constraint firstItem="g1U-Tl-OxU" firstAttribute="trailing" secondItem="ZYa-eA-3ke" secondAttribute="trailing" constant="10" id="IUe-mO-2IM"/>
+                            <constraint firstItem="g1U-Tl-OxU" firstAttribute="trailing" secondItem="hTb-tc-Rzz" secondAttribute="trailing" constant="20" id="NsR-wH-hdv"/>
+                            <constraint firstItem="hTb-tc-Rzz" firstAttribute="top" secondItem="nAI-4Y-a1p" secondAttribute="bottom" constant="45" id="cKP-mf-qkU"/>
+                            <constraint firstItem="hTb-tc-Rzz" firstAttribute="leading" secondItem="g1U-Tl-OxU" secondAttribute="leading" constant="20" id="db7-eZ-XQN"/>
                             <constraint firstItem="ZYa-eA-3ke" firstAttribute="top" secondItem="g1U-Tl-OxU" secondAttribute="top" constant="50" id="huA-Ci-YxH"/>
                             <constraint firstItem="ZYa-eA-3ke" firstAttribute="leading" secondItem="g1U-Tl-OxU" secondAttribute="leading" constant="10" id="nGo-I2-RI6"/>
                             <constraint firstItem="nAI-4Y-a1p" firstAttribute="top" secondItem="ZYa-eA-3ke" secondAttribute="bottom" constant="30" id="vIW-8A-Z7W"/>
                             <constraint firstItem="g1U-Tl-OxU" firstAttribute="trailing" secondItem="nAI-4Y-a1p" secondAttribute="trailing" constant="20" id="wZp-Vc-rAc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="GoButton" destination="hTb-tc-Rzz" id="J5O-Dy-OHq"/>
+                        <outlet property="nameTextField" destination="nAI-4Y-a1p" id="5Ci-Z6-RcR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaI-ay-c9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -358,9 +388,9 @@ Kyu-Chul Kim?</string>
                     </view>
                     <connections>
                         <outlet property="exitButton" destination="TME-ig-WjN" id="bUk-jK-wni"/>
+                        <outlet property="nameLabel" destination="eay-Ym-W7U" id="fSA-jk-6Xv"/>
                         <outlet property="nextButton" destination="9EG-gm-2DP" id="GsU-pK-qoR"/>
                         <outlet property="quizCollectionView" destination="Onx-eW-8uc" id="gqQ-nP-mxR"/>
-                        <outlet property="quizCount" destination="eay-Ym-W7U" id="fae-ve-4zU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iyx-N7-0bI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -392,22 +422,43 @@ Kyu-Chul Kim?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsV-pd-axb">
-                                <rect key="frame" x="20" y="612" width="374" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="YY2-xW-6uL"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="HOME">
-                                    <fontDescription key="titleFontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="HomeAction:" destination="46M-0Q-WQ3" eventType="touchUpInside" id="Fdh-5k-8Ha"/>
-                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V5h-yi-qIl"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="gWi-TQ-6wt">
+                                <rect key="frame" x="20" y="621" width="374" height="122"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HID-6W-3NM">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="DCW-kl-imE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SHOW RANK">
+                                            <fontDescription key="titleFontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="HomeAction:" destination="46M-0Q-WQ3" eventType="touchUpInside" id="vJl-AN-yvu"/>
+                                            <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i8A-A2-2AH"/>
+                                            <action selector="showRankAction:" destination="46M-0Q-WQ3" eventType="touchUpInside" id="4dQ-JN-aou"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsV-pd-axb">
+                                        <rect key="frame" x="0.0" y="72" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="YY2-xW-6uL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="EXIT">
+                                            <fontDescription key="titleFontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="HomeAction:" destination="46M-0Q-WQ3" eventType="touchUpInside" id="Fdh-5k-8Ha"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fgD-Be-g6g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -416,12 +467,12 @@ Kyu-Chul Kim?</string>
                             <constraint firstItem="R78-A5-Pqj" firstAttribute="centerX" secondItem="Bbu-BP-Tvf" secondAttribute="centerX" id="5Z1-Yp-5Zg"/>
                             <constraint firstItem="dBi-MV-bXj" firstAttribute="top" secondItem="fgD-Be-g6g" secondAttribute="top" constant="58.5" id="9Zf-9k-q0z"/>
                             <constraint firstItem="fgD-Be-g6g" firstAttribute="trailing" secondItem="dBi-MV-bXj" secondAttribute="trailing" constant="87" id="BMs-xv-qre"/>
-                            <constraint firstItem="UsV-pd-axb" firstAttribute="top" secondItem="R78-A5-Pqj" secondAttribute="bottom" constant="74" id="Bcj-kz-EBN"/>
                             <constraint firstItem="fgD-Be-g6g" firstAttribute="trailing" secondItem="CUw-XM-fnc" secondAttribute="trailing" constant="10" id="FJO-sg-5ZW"/>
                             <constraint firstItem="R78-A5-Pqj" firstAttribute="top" secondItem="CUw-XM-fnc" secondAttribute="bottom" constant="50" id="GIm-To-4Cs"/>
+                            <constraint firstItem="gWi-TQ-6wt" firstAttribute="top" secondItem="R78-A5-Pqj" secondAttribute="bottom" constant="83" id="OwC-27-zyY"/>
+                            <constraint firstItem="gWi-TQ-6wt" firstAttribute="leading" secondItem="fgD-Be-g6g" secondAttribute="leading" constant="20" id="Oxj-Vj-jR1"/>
+                            <constraint firstItem="fgD-Be-g6g" firstAttribute="trailing" secondItem="gWi-TQ-6wt" secondAttribute="trailing" constant="20" id="Yy7-Hq-408"/>
                             <constraint firstItem="dBi-MV-bXj" firstAttribute="leading" secondItem="fgD-Be-g6g" secondAttribute="leading" constant="87" id="aiR-7u-ZqS"/>
-                            <constraint firstItem="fgD-Be-g6g" firstAttribute="trailing" secondItem="UsV-pd-axb" secondAttribute="trailing" constant="20" id="bE5-On-XLs"/>
-                            <constraint firstItem="UsV-pd-axb" firstAttribute="leading" secondItem="fgD-Be-g6g" secondAttribute="leading" constant="20" id="gqK-uB-IEt"/>
                             <constraint firstItem="R78-A5-Pqj" firstAttribute="centerY" secondItem="Bbu-BP-Tvf" secondAttribute="centerY" constant="50" id="rjb-8K-wzW"/>
                         </constraints>
                     </view>
@@ -435,10 +486,70 @@ Kyu-Chul Kim?</string>
             </objects>
             <point key="canvasLocation" x="3065" y="119"/>
         </scene>
+        <!--Rank Table View Controller-->
+        <scene sceneID="GZH-14-4Dx">
+            <objects>
+                <viewController storyboardIdentifier="RankTableViewController" id="XTO-00-fhZ" customClass="RankTableViewController" customModule="KyuchulQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QhJ-Ub-wZR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whd-dX-P5D">
+                                <rect key="frame" x="20" y="94" width="374" height="70.5"/>
+                                <string key="text">Kyu-Chul's friend
+Rank</string>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="G3t-Iw-Tpt">
+                                <rect key="frame" x="20" y="200" width="374" height="512"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiJ-Y7-jms">
+                                <rect key="frame" x="20" y="752" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LTQ-qh-1lf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="EXIT">
+                                    <fontDescription key="titleFontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeAction:" destination="46M-0Q-WQ3" eventType="touchUpInside" id="l7Z-Lx-35f"/>
+                                    <action selector="exitAction:" destination="XTO-00-fhZ" eventType="touchUpInside" id="uOH-8h-Uie"/>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HhU-30-Plt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gJu-bm-37Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gJu-bm-37Z" firstAttribute="bottom" secondItem="G3t-Iw-Tpt" secondAttribute="bottom" constant="150" id="AiX-Jl-jDD"/>
+                            <constraint firstItem="gJu-bm-37Z" firstAttribute="trailing" secondItem="whd-dX-P5D" secondAttribute="trailing" constant="20" id="BRK-E6-3kb"/>
+                            <constraint firstItem="RiJ-Y7-jms" firstAttribute="top" secondItem="G3t-Iw-Tpt" secondAttribute="bottom" constant="40" id="Fqr-cJ-ozL"/>
+                            <constraint firstItem="gJu-bm-37Z" firstAttribute="trailing" secondItem="RiJ-Y7-jms" secondAttribute="trailing" constant="20" id="GiJ-rk-lMk"/>
+                            <constraint firstItem="G3t-Iw-Tpt" firstAttribute="top" secondItem="whd-dX-P5D" secondAttribute="bottom" constant="35.5" id="dup-hb-njQ"/>
+                            <constraint firstItem="whd-dX-P5D" firstAttribute="leading" secondItem="gJu-bm-37Z" secondAttribute="leading" constant="20" id="h8G-6L-KXM"/>
+                            <constraint firstItem="RiJ-Y7-jms" firstAttribute="leading" secondItem="gJu-bm-37Z" secondAttribute="leading" constant="20" id="jrk-aE-dqC"/>
+                            <constraint firstItem="whd-dX-P5D" firstAttribute="top" secondItem="gJu-bm-37Z" secondAttribute="top" constant="50" id="mHO-Ak-nvY"/>
+                            <constraint firstItem="G3t-Iw-Tpt" firstAttribute="leading" secondItem="gJu-bm-37Z" secondAttribute="leading" constant="20" id="nMx-Yh-aU1"/>
+                            <constraint firstItem="gJu-bm-37Z" firstAttribute="trailing" secondItem="G3t-Iw-Tpt" secondAttribute="trailing" constant="20" id="u6X-3n-DaP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rankTableView" destination="G3t-Iw-Tpt" id="b6i-jh-oPS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPk-v8-gZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3756.521739130435" y="118.52678571428571"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bpK-51-lyV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nBe-bI-9up" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WDv-bu-r4T" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RBC-wv-rR9">
@@ -450,6 +561,7 @@ Kyu-Chul Kim?</string>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3b3-pT-R3a"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBe-bI-9up" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>

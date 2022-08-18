@@ -18,7 +18,8 @@ class QuizResultViewController: UIViewController {
         updateMessage()
         resultLabel.text = "10/\(result)"
     }
-        
+    
+  
     
     func updateMessage() {
         if result <= 3 {
@@ -29,7 +30,7 @@ class QuizResultViewController: UIViewController {
             resultImageView.image = UIImage(systemName: "It's perfect for Kyu-Chul's friend.")
             resultMessageLabel.text = "It's perfect for Kyu-Chul's friend."
         } else {
-            resultImageView.image = UIImage(systemName: "Are you Kyu-Chul's family?")
+            resultImageView.image = UIImage(systemName: "heart")
             resultMessageLabel.text = "Are you Kyu-Chul's family?"
         }
     }
@@ -38,4 +39,10 @@ class QuizResultViewController: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     
+    @IBAction func showRankAction(_ sender: Any) {
+        guard let VC = storyboard?.instantiateViewController(withIdentifier: "RankTableViewController") as? RankTableViewController else { return }
+//        VC.modalPresentationStyle = .fullScreen
+//        self.present(VC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(VC, animated: true)
+    }
 }

@@ -10,11 +10,15 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet var sponsorshipButton: UIButton!{
+    
+    @IBOutlet var showRankButton: UIButton! {
         didSet {
-            sponsorshipButton.layer.cornerRadius = sponsorshipButton.frame.height/2
+            showRankButton.layer.cornerRadius = showRankButton.frame.height/2
         }
     }
+    
+    
+    
     @IBOutlet var playButton: UIButton! {
         didSet {
             playButton.layer.cornerRadius = playButton.frame.height/2
@@ -32,14 +36,23 @@ class ViewController: UIViewController {
         
         guard let VC = storyboard?.instantiateViewController(withIdentifier: "NameViewController") as? NameViewController else { return }
         
-        if let presentationController = VC.presentationController as? UISheetPresentationController {
-                        presentationController.detents = [.medium()]
-                    }
+       // if let presentationController = VC.presentationController as? UISheetPresentationController {
+       //                 presentationController.detents = [.medium()]
+       //   }
         
-        self.present(VC, animated: true)
+
+        self.navigationController?.pushViewController(VC, animated: true)
         
-        //self.navigationController?.pushViewController(VC, animated: true)
+       // self.present(VC, animated: true)
         
+    }
+    
+    
+    @IBAction func showRankAction(_ sender: Any) {
+        guard let VC = storyboard?.instantiateViewController(withIdentifier: "RankTableViewController") as? RankTableViewController else { return }
+//        VC.modalPresentationStyle = .fullScreen
+//        self.present(VC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(VC, animated: true)
     }
     
     /*

@@ -16,9 +16,10 @@ class QuizViewController: UIViewController {
 
     var point = 0
     var index = 0
+    var gameRankDict = [String:Any]()
     
-    
-    @IBOutlet var quizCount: UILabel!
+
+    @IBOutlet var nameLabel: UILabel!
     @IBOutlet var quizCollectionView: UICollectionView!
     @IBOutlet var nextButton: UIButton! {
         didSet {
@@ -34,26 +35,41 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(UserDefaults.standard.dictionaryRepresentation().keys)
+        print(UserDefaults.standard.dictionaryRepresentation().values)
         self.quizCollectionView.delegate = self
         self.quizCollectionView.dataSource = self
         getQuizData()
         nextButton.isEnabled = false
+        loadUserInfo()
+
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
-        self.view.backgroundColor = UIColor.systemGray3
-        self.quizCollectionView.backgroundColor = UIColor.systemGray3
+        self.view.backgroundColor = UIColor.tertiarySystemGroupedBackground
+        self.quizCollectionView.backgroundColor = UIColor.tertiarySystemGroupedBackground
         NotificationCenter.default.addObserver(self, selector: #selector(nextButtonEnable(_:)), name: Notification.Name("nextButtonEnable"), object: nil)
+        nameLabel.text =  UserDefaults.standard.string(forKey: "USER_NAME")
         
     }
+    
+    // 랭크테이블에 값이 쌓이지 않았음 일단 맨 처음에는 이름만 kEY에 들어가니 [String:Any]임 (아직 VAlue에 포인트 값이 넣어지지 않았기 때문) 그렇기 때문에 UserDefaults.standard.dictionary(forKey: "RANK_INFO")이 있으면 (첫 게임 시도가 아니면) gameRankDict = UserDefaults.standard.dictionary(forKey: "RANK_INFO")가 선언된다.?
+    // 이해하지 못하였으나, 일단 적용
+    func loadUserInfo(){
+            if UserDefaults.standard.dictionary(forKey: "RANK_INFO") == nil {
+                gameRankDict = [String:Any]()
+            } else {
+                gameRankDict = UserDefaults.standard.dictionary(forKey: "RANK_INFO") as! [String:Int]
+            }
+        }
 
     
     @IBAction func exitAction(_ sender: Any) {
         
-        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
         
     }
     
@@ -70,7 +86,10 @@ class QuizViewController: UIViewController {
                 self.quizCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
                 nextButton.isEnabled = false
             } else {
-                UserDefaults.standard.set(point, forKey: "APPpoint")
+                //UserDefaults.standard.set(point, forKey: "RANK_INFO")
+                gameRankDict[nameLabel.text ?? "NO NAME"] = point
+                print(gameRankDict)
+                UserDefaults.standard.set(gameRankDict, forKey: "RANK_INFO")
                 guard let VC = storyboard?.instantiateViewController(withIdentifier: "QuizResultViewController") as? QuizResultViewController else { return }
                 VC.result = point
                 self.navigationController?.pushViewController(VC, animated: true)
