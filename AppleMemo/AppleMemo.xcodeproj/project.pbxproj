@@ -79,10 +79,10 @@
 		69401B0A28B2AE10004A1E60 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				69401B1A28B2B27C004A1E60 /* Extension */,
 				69401B0C28B2AE76004A1E60 /* Application */,
 				69401B0B28B2AE2A004A1E60 /* Supporting Files */,
 				69CBC9C62886678F00D7653C /* Model */,
-				69CBC9D228913C5600D7653C /* Extension */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -92,6 +92,7 @@
 			children = (
 				69E2EE882883FABF00828016 /* Assets.xcassets */,
 				69E2EE8A2883FABF00828016 /* LaunchScreen.storyboard */,
+				69401AC0289BEDEE004A1E60 /* apple.json */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -203,6 +204,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		69401B1A28B2B27C004A1E60 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				69CBC9CE288FE51A00D7653C /* Memo+Extension.swift */,
+				69CBC9D028911BFD00D7653C /* Date.swift */,
+				69CBC9CC288D94D300D7653C /* String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		69CBC9C62886678F00D7653C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,17 +229,6 @@
 				69CBC9C828866FE400D7653C /* TableViewCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		69CBC9D228913C5600D7653C /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				69CBC9CE288FE51A00D7653C /* Memo+Extension.swift */,
-				69CBC9D028911BFD00D7653C /* Date.swift */,
-				69CBC9CC288D94D300D7653C /* String.swift */,
-			);
-			name = Extension;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		69E2EE732883FABB00828016 = {
@@ -255,7 +255,6 @@
 				69E2EE8D2883FABF00828016 /* Info.plist */,
 				69401B0D28B2AEB4004A1E60 /* Screen */,
 				69401B0A28B2AE10004A1E60 /* Global */,
-				69401AC0289BEDEE004A1E60 /* apple.json */,
 			);
 			path = AppleMemo;
 			sourceTree = "<group>";
