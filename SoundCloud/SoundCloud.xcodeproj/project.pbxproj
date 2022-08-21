@@ -82,34 +82,162 @@
 		69325F8F286ECE8A007FCD71 /* SoundCloud */ = {
 			isa = PBXGroup;
 			children = (
+				69401B2028B2B452004A1E60 /* Screen */,
+				69401B1C28B2B3E1004A1E60 /* Global */,
+			);
+			path = SoundCloud;
+			sourceTree = "<group>";
+		};
+		69401B1C28B2B3E1004A1E60 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				69401B1E28B2B3FB004A1E60 /* Font */,
+				69401B1F28B2B40B004A1E60 /* Supporting Files */,
+				69401B1D28B2B3EF004A1E60 /* Application */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		69401B1D28B2B3EF004A1E60 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				69325F90286ECE8A007FCD71 /* AppDelegate.swift */,
 				69325F92286ECE8A007FCD71 /* SceneDelegate.swift */,
-				69325FB4286EE42B007FCD71 /* TabBarViewController.swift */,
-				69325FAE286EE227007FCD71 /* SearchViewController.swift */,
-				69A1B7BC287EC2A700866ECC /* SearchNavigationController.swift */,
-				69325FB2286EE271007FCD71 /* LibraryViewController.swift */,
-				69C31EAF287D64980047F486 /* LibraryNavigationController.swift */,
-				69A1B7B7287E901E00866ECC /* Home */,
-				69325FAA286ED953007FCD71 /* Search.storyboard */,
-				69325FAC286ED965007FCD71 /* Library.storyboard */,
-				69AA1158287D66D500F093E7 /* Stream.storyboard */,
-				69AA1157287D66D500F093E7 /* StreamNavigationController.swift */,
-				69AA1159287D66D500F093E7 /* StreamViewController.swift */,
-				69325F99286ECE8E007FCD71 /* Assets.xcassets */,
-				69325F9B286ECE8E007FCD71 /* LaunchScreen.storyboard */,
-				69325F9E286ECE8E007FCD71 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		69401B1E28B2B3FB004A1E60 /* Font */ = {
+			isa = PBXGroup;
+			children = (
 				69A1B7BE287EC30C00866ECC /* Interstate-Regular-Font.ttf */,
 				69A1B7C0287EC32700866ECC /* InterstatePlus Black.ttf */,
 			);
-			path = SoundCloud;
+			path = Font;
+			sourceTree = "<group>";
+		};
+		69401B1F28B2B40B004A1E60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69325F99286ECE8E007FCD71 /* Assets.xcassets */,
+				69325F9B286ECE8E007FCD71 /* LaunchScreen.storyboard */,
+				69325F9E286ECE8E007FCD71 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69401B2028B2B452004A1E60 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				69A1B7B7287E901E00866ECC /* Home */,
+				69401B2328B2B495004A1E60 /* Stream */,
+				69401B2628B2B4CF004A1E60 /* Search */,
+				69401B2928B2B4F1004A1E60 /* Library */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		69401B2128B2B46D004A1E60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69325F96286ECE8A007FCD71 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69401B2228B2B484004A1E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69325FB4286EE42B007FCD71 /* TabBarViewController.swift */,
+				69325FBB28735286007FCD71 /* NavigationViewController.swift */,
+				69325F94286ECE8A007FCD71 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69401B2328B2B495004A1E60 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				69401B2528B2B4B4004A1E60 /* Controller */,
+				69401B2428B2B4B0004A1E60 /* View */,
+			);
+			path = Stream;
+			sourceTree = "<group>";
+		};
+		69401B2428B2B4B0004A1E60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69AA1158287D66D500F093E7 /* Stream.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69401B2528B2B4B4004A1E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69AA1157287D66D500F093E7 /* StreamNavigationController.swift */,
+				69AA1159287D66D500F093E7 /* StreamViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69401B2628B2B4CF004A1E60 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				69401B2828B2B4DA004A1E60 /* Controller */,
+				69401B2728B2B4D6004A1E60 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		69401B2728B2B4D6004A1E60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69325FAA286ED953007FCD71 /* Search.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69401B2828B2B4DA004A1E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69325FAE286EE227007FCD71 /* SearchViewController.swift */,
+				69A1B7BC287EC2A700866ECC /* SearchNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69401B2928B2B4F1004A1E60 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				69401B2B28B2B501004A1E60 /* Controller */,
+				69401B2A28B2B4FB004A1E60 /* View */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		69401B2A28B2B4FB004A1E60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69325FAC286ED965007FCD71 /* Library.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69401B2B28B2B501004A1E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69325FB2286EE271007FCD71 /* LibraryViewController.swift */,
+				69C31EAF287D64980047F486 /* LibraryNavigationController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		69A1B7B7287E901E00866ECC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				69325FBB28735286007FCD71 /* NavigationViewController.swift */,
-				69325F94286ECE8A007FCD71 /* ViewController.swift */,
-				69325F96286ECE8A007FCD71 /* Main.storyboard */,
+				69401B2228B2B484004A1E60 /* Controller */,
+				69401B2128B2B46D004A1E60 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
