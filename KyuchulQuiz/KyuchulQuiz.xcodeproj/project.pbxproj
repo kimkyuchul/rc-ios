@@ -76,25 +76,105 @@
 		69401ACD28A4062B004A1E60 /* KyuchulQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				69401ACE28A4062B004A1E60 /* AppDelegate.swift */,
-				69401AD028A4062B004A1E60 /* SceneDelegate.swift */,
-				69401AEA28A67C6E004A1E60 /* QuizModel.swift */,
-				69401AD228A4062B004A1E60 /* ViewController.swift */,
-				69401AE428A61B52004A1E60 /* QuizViewController.swift */,
-				69401AF428AE8381004A1E60 /* NameViewController.swift */,
-				69401AF228AC01A0004A1E60 /* QuizResultViewController.swift */,
-				69401AE628A62F62004A1E60 /* QuizCollectionViewCell.swift */,
-				69401AF628AEB505004A1E60 /* RankTableViewController.swift */,
-				69401AF828AEB51E004A1E60 /* RankTableViewCell.swift */,
-				69401AF928AEB51E004A1E60 /* RankTableViewCell.xib */,
-				69401AF028ABC09E004A1E60 /* QuizManager.swift */,
-				69401AD428A4062B004A1E60 /* Main.storyboard */,
-				69401AD728A4062D004A1E60 /* Assets.xcassets */,
-				69401AD928A4062D004A1E60 /* LaunchScreen.storyboard */,
-				69401ADC28A4062D004A1E60 /* Info.plist */,
-				69401AE228A56134004A1E60 /* BMJUA_otf.otf */,
+				69401B0428B2ABA1004A1E60 /* Screen */,
+				69401AFF28B2AB1A004A1E60 /* Global */,
 			);
 			path = KyuchulQuiz;
+			sourceTree = "<group>";
+		};
+		69401AFC28B28CF9004A1E60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69401AD928A4062D004A1E60 /* LaunchScreen.storyboard */,
+				69401AD728A4062D004A1E60 /* Assets.xcassets */,
+				69401ADC28A4062D004A1E60 /* Info.plist */,
+				69401AD028A4062B004A1E60 /* SceneDelegate.swift */,
+				69401ACE28A4062B004A1E60 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69401AFD28B28D2D004A1E60 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69401AD228A4062B004A1E60 /* ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		69401AFE28B2AB03004A1E60 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				69401AE228A56134004A1E60 /* BMJUA_otf.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		69401AFF28B2AB1A004A1E60 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				69401B0328B2AB7C004A1E60 /* Model */,
+				69401AFC28B28CF9004A1E60 /* Supporting Files */,
+				69401AFE28B2AB03004A1E60 /* Font */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		69401B0328B2AB7C004A1E60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69401AEA28A67C6E004A1E60 /* QuizModel.swift */,
+				69401AF028ABC09E004A1E60 /* QuizManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69401B0428B2ABA1004A1E60 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				69401AFD28B28D2D004A1E60 /* Home */,
+				69401B0628B2AC3D004A1E60 /* Name */,
+				69401B0728B2AC62004A1E60 /* Game */,
+				69401B0828B2AC95004A1E60 /* Rank */,
+				69401AD428A4062B004A1E60 /* Main.storyboard */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		69401B0628B2AC3D004A1E60 /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				69401AF428AE8381004A1E60 /* NameViewController.swift */,
+			);
+			path = Name;
+			sourceTree = "<group>";
+		};
+		69401B0728B2AC62004A1E60 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				69401AE428A61B52004A1E60 /* QuizViewController.swift */,
+				69401AE628A62F62004A1E60 /* QuizCollectionViewCell.swift */,
+				69401AF228AC01A0004A1E60 /* QuizResultViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		69401B0828B2AC95004A1E60 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				69401AF628AEB505004A1E60 /* RankTableViewController.swift */,
+				69401B0928B2AC9F004A1E60 /* Cell */,
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		69401B0928B2AC9F004A1E60 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				69401AF828AEB51E004A1E60 /* RankTableViewCell.swift */,
+				69401AF928AEB51E004A1E60 /* RankTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -27,7 +27,7 @@ class QuizResultViewController: UIViewController {
             resultMessageLabel.text = "This person is not Kyu-Chul's friend."
             resultMessageLabel.textColor = UIColor.red
         } else if result <= 6 {
-            resultImageView.image = UIImage(systemName: "It's perfect for Kyu-Chul's friend.")
+            resultImageView.image = UIImage(systemName: "")
             resultMessageLabel.text = "It's perfect for Kyu-Chul's friend."
         } else {
             resultImageView.image = UIImage(systemName: "heart")

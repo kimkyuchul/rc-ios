@@ -36,15 +36,7 @@ class ViewController: UIViewController {
         
         guard let VC = storyboard?.instantiateViewController(withIdentifier: "NameViewController") as? NameViewController else { return }
         
-       // if let presentationController = VC.presentationController as? UISheetPresentationController {
-       //                 presentationController.detents = [.medium()]
-       //   }
-        
-
         self.navigationController?.pushViewController(VC, animated: true)
-        
-       // self.present(VC, animated: true)
-        
     }
     
     

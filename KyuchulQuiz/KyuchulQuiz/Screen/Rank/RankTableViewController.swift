@@ -11,6 +11,18 @@ class RankTableViewController: UIViewController {
 
     @IBOutlet var rankTableView: UITableView!
     
+    // var gameRankDict: [String:Any] = [] 와 같음?
+    
+    /*var imageArray : [UIImage] = []
+     imageArray.append(nil) --> 성립 안댐
+     -----------------------
+     var imageArray = [UIImage?]()
+     imageArray.append(nil) -> 가능
+     
+     위와 같은 차이 발생할수도?
+     */
+    
+    var imageArray = [UIImage?]()
     var gameRankDict = [String:Any]()
     var nameArr = [String]()
     var pointArr = [Int]()
@@ -24,8 +36,6 @@ class RankTableViewController: UIViewController {
         
         let nibName = UINib(nibName: "RankTableViewCell", bundle: nil)
         self.rankTableView.register(nibName, forCellReuseIdentifier: "RankTableViewCell")
-
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,13 +44,12 @@ class RankTableViewController: UIViewController {
         self.view.backgroundColor = UIColor.tertiarySystemGroupedBackground
     }
     
-    
-    
     func rankInfo(){
         
         gameRankDict = UserDefaults.standard.dictionary(forKey: "RANK_INFO")!
         
         nameArr = Array(gameRankDict.keys)
+        
         for val in gameRankDict.values {
             pointArr.append(val as! Int)
         }
@@ -50,14 +59,11 @@ class RankTableViewController: UIViewController {
         }
     }
     
-
+    
     @IBAction func exitAction(_ sender: Any) {
         
         self.navigationController?.popViewController(animated: true)
-        
     }
-    
-
 }
 
 extension RankTableViewController: UITableViewDelegate, UITableViewDataSource {
@@ -72,17 +78,14 @@ extension RankTableViewController: UITableViewDelegate, UITableViewDataSource {
         //https://pskbhnsr.tistory.com/48 딕셔너리 정렬
         let sortedResult = gameRankResultDict.sorted{$0.1 > $1.1}
         
-        cell.rankLabel.text = "\(indexPath.row)"
+        cell.rankLabel.text = "\(indexPath.row+1)"
         cell.rankNameLabel.text = sortedResult[indexPath.row].key
         cell.rankPointLabel.text = "\(sortedResult[indexPath.row].value)"
         
         return cell
-        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
-    
-    
 }

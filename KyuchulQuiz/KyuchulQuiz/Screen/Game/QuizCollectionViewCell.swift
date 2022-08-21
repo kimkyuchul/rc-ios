@@ -40,15 +40,10 @@ class QuizCollectionViewCell: UICollectionViewCell {
     
     private var correntAnswer: String?
      
-    
-    
     @IBOutlet weak var option1View: UIControl!
     @IBOutlet weak var option2View: UIControl!
     @IBOutlet weak var option3View: UIControl!
     @IBOutlet weak var option4View: UIControl!
-    
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -76,63 +71,59 @@ class QuizCollectionViewCell: UICollectionViewCell {
     }
     
     var selectedAnswer: ((_ seletedAnswer: Bool) -> Void)?
-   
-     @IBAction func option1Action(_ sender: Any) {
-         NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
+    
+    @IBAction func option1Action(_ sender: Any) {
+        NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
         changeUI(selectedOption: .optionA)
         
-         var isAnswer = false
-         
-         if correntAnswer == quizmodel?.option_1 {
-             isAnswer = true
-         }
-         
-         selectedAnswer?(isAnswer)
+        var isAnswer = false
+        
+        if correntAnswer == quizmodel?.option_1 {
+            isAnswer = true
+        }
+        selectedAnswer?(isAnswer)
     }
     
 
-     @IBAction func option2Action(_ sender: Any) {
-         NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
+    @IBAction func option2Action(_ sender: Any) {
+        NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
         changeUI(selectedOption: .optionB)
-         
-         var isAnswer = false
-         if correntAnswer == quizmodel?.option_2 {
-             isAnswer = true
-         }
-         
-         selectedAnswer?(isAnswer)
+        
+        var isAnswer = false
+        if correntAnswer == quizmodel?.option_2 {
+            isAnswer = true
+        }
+        
+        selectedAnswer?(isAnswer)
     }
     
     
-     @IBAction func option3Action(_ sender: Any) {
-         NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
+    @IBAction func option3Action(_ sender: Any) {
+        NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
         changeUI(selectedOption: .optionC)
-         
-         var isAnswer = false
-         
-         if correntAnswer == quizmodel?.option_3 {
-             isAnswer = true
-         }
-         
-         selectedAnswer?(isAnswer)
+        
+        var isAnswer = false
+        
+        if correntAnswer == quizmodel?.option_3 {
+            isAnswer = true
+        }
+        
+        selectedAnswer?(isAnswer)
     }
     
     
-     @IBAction func option4Action(_ sender: Any) {
-         NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
+    @IBAction func option4Action(_ sender: Any) {
+        NotificationCenter.default.post(name: Notification.Name("nextButtonEnable"), object: nil)
         changeUI(selectedOption: .optionD)
-         
-         var isAnswer = false
-         
-         if correntAnswer == quizmodel?.option_4 {
-             isAnswer = true
-         }
-         
-         selectedAnswer?(isAnswer)
-         
-         
+        
+        var isAnswer = false
+        
+        if correntAnswer == quizmodel?.option_4 {
+            isAnswer = true
+        }
+        
+        selectedAnswer?(isAnswer)
     }
-    
     
     func changeUI(selectedOption: selectedOption) {
         switch selectedOption {
@@ -159,29 +150,28 @@ class QuizCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    
-    
     func updateUI(uiView: UIView, borderWidth: CGFloat = 0) {
         uiView.layer.borderWidth = borderWidth
         uiView.layer.borderColor = UIColor.systemGray3.cgColor
     }
+    
     /*
-    @IBAction func tabBackgroudColorButton(_ sender: UIAction) {
-        
-        if sender == self.option1View {
-            self.option1View.backgroundColor = .white
-            print("a")
-        } else if  sender == self.option2View {
-            self.option2View.backgroundColor = .white
-        } else if sender == self.option3View {
-            self.option3View.backgroundColor = .white
-        } else {
-            self.option4View.backgroundColor = .white
-        }
-        
-    }
+     @IBAction func tabBackgroudColorButton(_ sender: UIAction) {
+     
+     if sender == self.option1View {
+     self.option1View.backgroundColor = .white
+     print("a")
+     } else if  sender == self.option2View {
+     self.option2View.backgroundColor = .white
+     } else if sender == self.option3View {
+     self.option3View.backgroundColor = .white
+     } else {
+     self.option4View.backgroundColor = .white
+     }
+     
+     }
      
      */
     
- 
+    
 }
