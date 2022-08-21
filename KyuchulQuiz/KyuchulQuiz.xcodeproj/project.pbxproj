@@ -88,8 +88,6 @@
 				69401AD928A4062D004A1E60 /* LaunchScreen.storyboard */,
 				69401AD728A4062D004A1E60 /* Assets.xcassets */,
 				69401ADC28A4062D004A1E60 /* Info.plist */,
-				69401AD028A4062B004A1E60 /* SceneDelegate.swift */,
-				69401ACE28A4062B004A1E60 /* AppDelegate.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,6 +111,7 @@
 		69401AFF28B2AB1A004A1E60 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				69401B1B28B2B322004A1E60 /* Application */,
 				69401B0328B2AB7C004A1E60 /* Model */,
 				69401AFC28B28CF9004A1E60 /* Supporting Files */,
 				69401AFE28B2AB03004A1E60 /* Font */,
@@ -175,6 +174,15 @@
 				69401AF928AEB51E004A1E60 /* RankTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		69401B1B28B2B322004A1E60 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				69401AD028A4062B004A1E60 /* SceneDelegate.swift */,
+				69401ACE28A4062B004A1E60 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
