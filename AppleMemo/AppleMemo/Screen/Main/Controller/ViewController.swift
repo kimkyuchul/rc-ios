@@ -86,7 +86,7 @@ class ViewController: UIViewController {
         //https://stackoverflow.com/questions/42106980/how-to-present-a-viewcontroller-on-half-screen
         
         if #available(iOS 15.0, *) {
-            let optionVC : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let optionVC : UIStoryboard = UIStoryboard(name: "Option", bundle: nil)
             
             guard let VC = optionVC.instantiateViewController(withIdentifier: "Option") as? optionViewController else { return }
             

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		69401ABF289BDB11004A1E60 /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69401ABE289BDB11004A1E60 /* infoViewController.swift */; };
 		69401AC1289BEDEE004A1E60 /* apple.json in Resources */ = {isa = PBXBuildFile; fileRef = 69401AC0289BEDEE004A1E60 /* apple.json */; };
+		69401B1628B2AFDC004A1E60 /* Option.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69401B1528B2AFDC004A1E60 /* Option.storyboard */; };
 		69CBC9C12886675900D7653C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 69CBC9C02886675900D7653C /* Realm */; };
 		69CBC9C32886675900D7653C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 69CBC9C22886675900D7653C /* RealmSwift */; };
 		69CBC9C52886677D00D7653C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBC9C42886677D00D7653C /* Model.swift */; };
@@ -36,6 +37,7 @@
 		4BCD621AA6709274FEF83931 /* Pods_AppleMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69401ABE289BDB11004A1E60 /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 		69401AC0289BEDEE004A1E60 /* apple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apple.json; sourceTree = "<group>"; };
+		69401B1528B2AFDC004A1E60 /* Option.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Option.storyboard; sourceTree = "<group>"; };
 		69CBC9C42886677D00D7653C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		69CBC9C728866FE400D7653C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		69CBC9C828866FE400D7653C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -74,6 +76,133 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69401B0A28B2AE10004A1E60 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				69401B0C28B2AE76004A1E60 /* Application */,
+				69401B0B28B2AE2A004A1E60 /* Supporting Files */,
+				69CBC9C62886678F00D7653C /* Model */,
+				69CBC9D228913C5600D7653C /* Extension */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		69401B0B28B2AE2A004A1E60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69E2EE882883FABF00828016 /* Assets.xcassets */,
+				69E2EE8A2883FABF00828016 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69401B0C28B2AE76004A1E60 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				69E2EE7F2883FABB00828016 /* AppDelegate.swift */,
+				69E2EE812883FABB00828016 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		69401B0D28B2AEB4004A1E60 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				69401B0E28B2AEC7004A1E60 /* Main */,
+				69401B0F28B2AED1004A1E60 /* Detail */,
+				69401B1028B2AEDA004A1E60 /* Option */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		69401B0E28B2AEC7004A1E60 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				69401B1428B2AF30004A1E60 /* Controller */,
+				69401B1328B2AF2B004A1E60 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		69401B0F28B2AED1004A1E60 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				69401B1228B2AF08004A1E60 /* Controller */,
+				69401B1128B2AEF7004A1E60 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		69401B1028B2AEDA004A1E60 /* Option */ = {
+			isa = PBXGroup;
+			children = (
+				69401B1828B2B0C2004A1E60 /* Controller */,
+				69401B1728B2B0A5004A1E60 /* View */,
+			);
+			path = Option;
+			sourceTree = "<group>";
+		};
+		69401B1128B2AEF7004A1E60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69E2EE952884278A00828016 /* Detail.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69401B1228B2AF08004A1E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69E2EE97288427C200828016 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69401B1328B2AF2B004A1E60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69E2EE852883FABB00828016 /* Main.storyboard */,
+				69CBC9CB28866FFD00D7653C /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69401B1428B2AF30004A1E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69E2EE832883FABB00828016 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69401B1728B2B0A5004A1E60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69401B1528B2AFDC004A1E60 /* Option.storyboard */,
+				69401B1928B2B10B004A1E60 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69401B1828B2B0C2004A1E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69EC23FE2897F192007001EA /* optionViewController.swift */,
+				69EC2407289BB53A007001EA /* SettingSection.swift */,
+				69401ABE289BDB11004A1E60 /* infoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69401B1928B2B10B004A1E60 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				69EC2403289B8000007001EA /* optionTableViewCell.swift */,
+				69EC2404289B8000007001EA /* optionTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		69CBC9C62886678F00D7653C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +214,6 @@
 		69CBC9CB28866FFD00D7653C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				69EC2403289B8000007001EA /* optionTableViewCell.swift */,
-				69EC2404289B8000007001EA /* optionTableViewCell.xib */,
 				69CBC9C728866FE400D7653C /* TableViewCell.swift */,
 				69CBC9C828866FE400D7653C /* TableViewCell.xib */,
 			);
@@ -101,6 +228,7 @@
 				69CBC9CC288D94D300D7653C /* String.swift */,
 			);
 			name = Extension;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		69E2EE732883FABB00828016 = {
@@ -124,40 +252,12 @@
 		69E2EE7E2883FABB00828016 /* AppleMemo */ = {
 			isa = PBXGroup;
 			children = (
-				69CBC9D228913C5600D7653C /* Extension */,
-				69CBC9C62886678F00D7653C /* Model */,
-				69E2EE93288402F200828016 /* View */,
-				69E2EE942884040D00828016 /* Controller */,
-				69E2EE882883FABF00828016 /* Assets.xcassets */,
-				69E2EE7F2883FABB00828016 /* AppDelegate.swift */,
-				69E2EE812883FABB00828016 /* SceneDelegate.swift */,
-				69E2EE8A2883FABF00828016 /* LaunchScreen.storyboard */,
 				69E2EE8D2883FABF00828016 /* Info.plist */,
+				69401B0D28B2AEB4004A1E60 /* Screen */,
+				69401B0A28B2AE10004A1E60 /* Global */,
 				69401AC0289BEDEE004A1E60 /* apple.json */,
 			);
 			path = AppleMemo;
-			sourceTree = "<group>";
-		};
-		69E2EE93288402F200828016 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				69E2EE852883FABB00828016 /* Main.storyboard */,
-				69E2EE952884278A00828016 /* Detail.storyboard */,
-				69CBC9CB28866FFD00D7653C /* Cell */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		69E2EE942884040D00828016 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				69E2EE832883FABB00828016 /* ViewController.swift */,
-				69401ABE289BDB11004A1E60 /* infoViewController.swift */,
-				69EC2407289BB53A007001EA /* SettingSection.swift */,
-				69EC23FE2897F192007001EA /* optionViewController.swift */,
-				69E2EE97288427C200828016 /* DetailViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		B64AF2B7D74020AD7CA89771 /* Pods */ = {
@@ -245,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E2EE8C2883FABF00828016 /* LaunchScreen.storyboard in Resources */,
+				69401B1628B2AFDC004A1E60 /* Option.storyboard in Resources */,
 				69EC24002897F6BF007001EA /* Main.storyboard in Resources */,
 				69EC2406289B8000007001EA /* optionTableViewCell.xib in Resources */,
 				69CBC9CA28866FE400D7653C /* TableViewCell.xib in Resources */,
