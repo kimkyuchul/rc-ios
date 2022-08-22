@@ -40,7 +40,8 @@ class QuizResultViewController: UIViewController {
     }
     
     @IBAction func showRankAction(_ sender: Any) {
-        guard let VC = storyboard?.instantiateViewController(withIdentifier: "RankTableViewController") as? RankTableViewController else { return }
+        let MainVC : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let VC = MainVC.instantiateViewController(withIdentifier: "RankTableViewController") as? RankTableViewController else { return }
 //        VC.modalPresentationStyle = .fullScreen
 //        self.present(VC, animated: true, completion: nil)
         self.navigationController?.pushViewController(VC, animated: true)

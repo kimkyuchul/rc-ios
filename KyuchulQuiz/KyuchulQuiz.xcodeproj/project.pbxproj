@@ -10,7 +10,6 @@
 		69401ACF28A4062B004A1E60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69401ACE28A4062B004A1E60 /* AppDelegate.swift */; };
 		69401AD128A4062B004A1E60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69401AD028A4062B004A1E60 /* SceneDelegate.swift */; };
 		69401AD328A4062B004A1E60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69401AD228A4062B004A1E60 /* ViewController.swift */; };
-		69401AD628A4062B004A1E60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69401AD428A4062B004A1E60 /* Main.storyboard */; };
 		69401AD828A4062D004A1E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69401AD728A4062D004A1E60 /* Assets.xcassets */; };
 		69401ADB28A4062D004A1E60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69401AD928A4062D004A1E60 /* LaunchScreen.storyboard */; };
 		69401AE328A56134004A1E60 /* BMJUA_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 69401AE228A56134004A1E60 /* BMJUA_otf.otf */; };
@@ -20,9 +19,10 @@
 		69401AF128ABC09E004A1E60 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69401AF028ABC09E004A1E60 /* QuizManager.swift */; };
 		69401AF328AC01A0004A1E60 /* QuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69401AF228AC01A0004A1E60 /* QuizResultViewController.swift */; };
 		69401AF528AE8381004A1E60 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69401AF428AE8381004A1E60 /* NameViewController.swift */; };
-		69401AF728AEB505004A1E60 /* RankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69401AF628AEB505004A1E60 /* RankTableViewController.swift */; };
 		69401AFA28AEB51E004A1E60 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69401AF828AEB51E004A1E60 /* RankTableViewCell.swift */; };
 		69401AFB28AEB51E004A1E60 /* RankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69401AF928AEB51E004A1E60 /* RankTableViewCell.xib */; };
+		69C9566028B3E0E200659534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69401AD428A4062B004A1E60 /* Main.storyboard */; };
+		69C9566228B3E3F200659534 /* RankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C9566128B3E3F200659534 /* RankTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +41,9 @@
 		69401AF028ABC09E004A1E60 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 		69401AF228AC01A0004A1E60 /* QuizResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultViewController.swift; sourceTree = "<group>"; };
 		69401AF428AE8381004A1E60 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
-		69401AF628AEB505004A1E60 /* RankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewController.swift; sourceTree = "<group>"; };
 		69401AF828AEB51E004A1E60 /* RankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
 		69401AF928AEB51E004A1E60 /* RankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
+		69C9566128B3E3F200659534 /* RankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +76,7 @@
 		69401ACD28A4062B004A1E60 /* KyuchulQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				69401ADC28A4062D004A1E60 /* Info.plist */,
 				69401B0428B2ABA1004A1E60 /* Screen */,
 				69401AFF28B2AB1A004A1E60 /* Global */,
 			);
@@ -87,7 +88,6 @@
 			children = (
 				69401AD928A4062D004A1E60 /* LaunchScreen.storyboard */,
 				69401AD728A4062D004A1E60 /* Assets.xcassets */,
-				69401ADC28A4062D004A1E60 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 		69401B0828B2AC95004A1E60 /* Rank */ = {
 			isa = PBXGroup;
 			children = (
-				69401AF628AEB505004A1E60 /* RankTableViewController.swift */,
+				69C9566128B3E3F200659534 /* RankTableViewController.swift */,
 				69401B0928B2AC9F004A1E60 /* Cell */,
 			);
 			path = Rank;
@@ -244,8 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				69401ADB28A4062D004A1E60 /* LaunchScreen.storyboard in Resources */,
+				69C9566028B3E0E200659534 /* Main.storyboard in Resources */,
 				69401AD828A4062D004A1E60 /* Assets.xcassets in Resources */,
-				69401AD628A4062B004A1E60 /* Main.storyboard in Resources */,
 				69401AFB28AEB51E004A1E60 /* RankTableViewCell.xib in Resources */,
 				69401AE328A56134004A1E60 /* BMJUA_otf.otf in Resources */,
 			);
@@ -264,9 +264,9 @@
 				69401ACF28A4062B004A1E60 /* AppDelegate.swift in Sources */,
 				69401AF128ABC09E004A1E60 /* QuizManager.swift in Sources */,
 				69401AFA28AEB51E004A1E60 /* RankTableViewCell.swift in Sources */,
-				69401AF728AEB505004A1E60 /* RankTableViewController.swift in Sources */,
 				69401AF528AE8381004A1E60 /* NameViewController.swift in Sources */,
 				69401AD128A4062B004A1E60 /* SceneDelegate.swift in Sources */,
+				69C9566228B3E3F200659534 /* RankTableViewController.swift in Sources */,
 				69401AEB28A67C6E004A1E60 /* QuizModel.swift in Sources */,
 				69401AE528A61B52004A1E60 /* QuizViewController.swift in Sources */,
 			);

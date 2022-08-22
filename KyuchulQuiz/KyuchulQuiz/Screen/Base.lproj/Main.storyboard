@@ -491,7 +491,7 @@ Kyu-Chul Kim?</string>
         <!--Rank Table View Controller-->
         <scene sceneID="GZH-14-4Dx">
             <objects>
-                <viewController storyboardIdentifier="RankTableViewController" id="XTO-00-fhZ" customClass="RankTableViewController" customModule="KyuchulQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RankTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XTO-00-fhZ" customClass="RankTableViewController" customModule="KyuchulQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QhJ-Ub-wZR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -555,6 +555,7 @@ Rank</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WDv-bu-r4T" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RBC-wv-rR9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

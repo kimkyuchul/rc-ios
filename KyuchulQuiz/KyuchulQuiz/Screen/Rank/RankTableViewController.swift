@@ -46,7 +46,12 @@ class RankTableViewController: UIViewController {
     
     func rankInfo(){
         
-        gameRankDict = UserDefaults.standard.dictionary(forKey: "RANK_INFO")!
+        if UserDefaults.standard.dictionary(forKey: "RANK_INFO") == nil {
+            gameRankDict = [String:Any]()
+        } else {
+            gameRankDict = UserDefaults.standard.dictionary(forKey: "RANK_INFO")!
+        }
+        //gameRankDict = UserDefaults.standard.dictionary(forKey: "RANK_INFO")
         
         nameArr = Array(gameRankDict.keys)
         
@@ -78,9 +83,33 @@ extension RankTableViewController: UITableViewDelegate, UITableViewDataSource {
         //https://pskbhnsr.tistory.com/48 딕셔너리 정렬
         let sortedResult = gameRankResultDict.sorted{$0.1 > $1.1}
         
-        cell.rankLabel.text = "\(indexPath.row+1)"
+        if indexPath.row >= 0 && indexPath.row <= 2 {
+            cell.rankLabel.textColor = UIColor.red
+        }
+         
+       
+        if (indexPath.row % 10 == 1) {
+            cell.rankLabel.text = "\(indexPath.row+1)st"
+            if(indexPath.row == 11) {
+                cell.rankLabel.text = "\(indexPath.row+1)th"
+            }
+        } else if (indexPath.row % 10 == 2) {
+            cell.rankLabel.text = "\(indexPath.row+1)nd"
+            if (indexPath.row == 12) {
+                cell.rankLabel.text = "\(indexPath.row+1)th"
+            }
+        } else if (indexPath.row % 10 == 3) {
+            cell.rankLabel.text = "\(indexPath.row+1)rd"
+            if (indexPath.row == 13) {
+                cell.rankLabel.text = "\(indexPath.row+1)th"
+            }
+        } else {
+            cell.rankLabel.text = "\(indexPath.row+1)th"
+        }
+        
+        //cell.rankLabel.text = "\(indexPath.row+1)"
         cell.rankNameLabel.text = sortedResult[indexPath.row].key
-        cell.rankPointLabel.text = "\(sortedResult[indexPath.row].value)"
+        cell.rankPointLabel.text = "\(sortedResult[indexPath.row].value) Point"
         
         return cell
     }
@@ -89,3 +118,4 @@ extension RankTableViewController: UITableViewDelegate, UITableViewDataSource {
         return 50
     }
 }
+
