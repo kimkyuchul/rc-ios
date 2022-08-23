@@ -40,8 +40,10 @@ class RankTableViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        IndicatorView.shared.hide()
         rankTableView.backgroundColor = UIColor.white
         self.view.backgroundColor = UIColor.tertiarySystemGroupedBackground
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     func rankInfo(){
@@ -87,7 +89,6 @@ extension RankTableViewController: UITableViewDelegate, UITableViewDataSource {
             cell.rankLabel.textColor = UIColor.red
         }
          
-       
         if (indexPath.row % 10 == 1) {
             cell.rankLabel.text = "\(indexPath.row+1)st"
             if(indexPath.row == 11) {

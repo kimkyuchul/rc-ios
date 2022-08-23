@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //IndicatorView.shared.show(backgoundColor: UIColor.gray)
         
         self.view.backgroundColor = UIColor.tertiarySystemGroupedBackground
     }
@@ -44,6 +45,7 @@ class ViewController: UIViewController {
         guard let VC = storyboard?.instantiateViewController(withIdentifier: "RankTableViewController") as? RankTableViewController else { return }
 //        VC.modalPresentationStyle = .fullScreen
 //        self.present(VC, animated: true, completion: nil)
+        IndicatorView.shared.show(backgoundColor: UIColor.gray)
         self.navigationController?.pushViewController(VC, animated: true)
     }
     

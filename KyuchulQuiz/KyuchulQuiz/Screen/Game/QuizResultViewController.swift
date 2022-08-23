@@ -44,6 +44,7 @@ class QuizResultViewController: UIViewController {
         guard let VC = MainVC.instantiateViewController(withIdentifier: "RankTableViewController") as? RankTableViewController else { return }
 //        VC.modalPresentationStyle = .fullScreen
 //        self.present(VC, animated: true, completion: nil)
+        IndicatorView.shared.show(backgoundColor: UIColor.gray)
         self.navigationController?.pushViewController(VC, animated: true)
     }
 }

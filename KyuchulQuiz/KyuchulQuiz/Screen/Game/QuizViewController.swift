@@ -109,16 +109,20 @@ class QuizViewController: UIViewController {
      task 실행, task 완료 후 completion Handler 클로저 호출
      */
     func getQuizData() {
+        IndicatorView.shared.show(backgoundColor: UIColor.gray)
         guard let url = URL(string: "https://gist.githubusercontent.com/kimkyuchul/bac626b51566e739838d8b57f26ee5e0/raw/80f2acd9ecce7bbdfbc49fbc1f6f3f0ca0ca6598/kyuchulQuiz.json") else {return}
             let session = URLSession(configuration: .default)
+        
         
         session.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else { return }
             let decoder = JSONDecoder()
             guard let quizInfo = try? decoder.decode(DataModel.self, from: data) else { return }
             self.questions = quizInfo.data.questions
+            
             DispatchQueue.main.async {
                 self.quizCollectionView.reloadData()
+                IndicatorView.shared.hide()
             }
         }.resume()
     }

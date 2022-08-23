@@ -23,6 +23,8 @@
 		69401AFB28AEB51E004A1E60 /* RankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69401AF928AEB51E004A1E60 /* RankTableViewCell.xib */; };
 		69C9566028B3E0E200659534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69401AD428A4062B004A1E60 /* Main.storyboard */; };
 		69C9566228B3E3F200659534 /* RankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C9566128B3E3F200659534 /* RankTableViewController.swift */; };
+		69C9566428B4E11400659534 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C9566328B4E11400659534 /* IndicatorView.swift */; };
+		69C9566728B52D3600659534 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 69C9566628B52D3600659534 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,7 @@
 		69401AF828AEB51E004A1E60 /* RankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
 		69401AF928AEB51E004A1E60 /* RankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
 		69C9566128B3E3F200659534 /* RankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewController.swift; sourceTree = "<group>"; };
+		69C9566328B4E11400659534 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C9566728B52D3600659534 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +158,7 @@
 				69401AE428A61B52004A1E60 /* QuizViewController.swift */,
 				69401AE628A62F62004A1E60 /* QuizCollectionViewCell.swift */,
 				69401AF228AC01A0004A1E60 /* QuizResultViewController.swift */,
+				69C9566328B4E11400659534 /* IndicatorView.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -201,6 +206,9 @@
 			dependencies = (
 			);
 			name = KyuchulQuiz;
+			packageProductDependencies = (
+				69C9566628B52D3600659534 /* SnapKit */,
+			);
 			productName = KyuchulQuiz;
 			productReference = 69401ACB28A4062B004A1E60 /* KyuchulQuiz.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 69401AC228A4062B004A1E60;
+			packageReferences = (
+				69C9566528B52D3600659534 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 69401ACC28A4062B004A1E60 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,6 +279,7 @@
 				69401AD128A4062B004A1E60 /* SceneDelegate.swift in Sources */,
 				69C9566228B3E3F200659534 /* RankTableViewController.swift in Sources */,
 				69401AEB28A67C6E004A1E60 /* QuizModel.swift in Sources */,
+				69C9566428B4E11400659534 /* IndicatorView.swift in Sources */,
 				69401AE528A61B52004A1E60 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +500,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69C9566528B52D3600659534 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69C9566628B52D3600659534 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C9566528B52D3600659534 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69401AC328A4062B004A1E60 /* Project object */;
 }
