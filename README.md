@@ -44,7 +44,7 @@
 ### 3. 'How much do you know about Kyu-Chul Kim?' Quiz Game
 [링크](https://github.com/kimkyuchul/rc-ios/tree/main/KyuchulQuiz)
 
-**'How much do you know about Kyu-Chul Kim?' iOS CollectionView & URLSession & UserDefault **
+**'How much do you know about Kyu-Chul Kim?' iOS CollectionView & URLSession & UserDefault**
 
 #### ▶︎ 게임로직
 <img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/KyuchulQuiz.gif" width="45%"/>
@@ -62,9 +62,9 @@
 <br></br>
 -------------------------------------------------------
 ### 4. Social Login (KaKao & Naver)
-[링크](https://github.com/kimkyuchul/rc-ios/tree/main/Social Login/)
+[링크](https://github.com/kimkyuchul/rc-ios/tree/main/Social\Login/)
 
-**'Social Login' iOS KaKao Login & Naver Login **
+**'Social Login' iOS KaKao Login & Naver Login**
 
 #### ▶︎ 실행화면
 <img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/SocialLogin.gif" width="51%"/>
