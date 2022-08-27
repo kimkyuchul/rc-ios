@@ -16,6 +16,7 @@ PODS:
     - KakaoSDKCommon/Common (= 2.11.1)
   - KakaoSDKUser (2.11.1):
     - KakaoSDKAuth (= 2.11.1)
+  - naveridlogin-sdk-ios (4.1.5)
   - SnapKit (5.6.0)
   - Then (3.0.0)
 
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - KakaoSDKCommon
   - KakaoSDKTalk
   - KakaoSDKUser
+  - naveridlogin-sdk-ios
   - SnapKit (~> 5.6.0)
   - Then
 
@@ -35,6 +37,7 @@ SPEC REPOS:
     - KakaoSDKTalk
     - KakaoSDKTemplate
     - KakaoSDKUser
+    - naveridlogin-sdk-ios
     - SnapKit
     - Then
 
@@ -45,9 +48,10 @@ SPEC CHECKSUMS:
   KakaoSDKTalk: 504872e5b49e5ff104c65e37d54d2a8f04c606d3
   KakaoSDKTemplate: f8ee0b33f649e436c1aaf2a3a6bd6aa3dcae2451
   KakaoSDKUser: 08c0a4f40bebdebdf948a9e3d0e44ed5c2754f99
+  naveridlogin-sdk-ios: 4351fe7162cd6b8b6dbb37bd7cc205304fa1d889
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 72d17e2ce5f6285619cf0f007e8e2887bf79eb76
+PODFILE CHECKSUM: 84c650f3cada2a06b98f250ba59670e9c0163690
 
 COCOAPODS: 1.11.3

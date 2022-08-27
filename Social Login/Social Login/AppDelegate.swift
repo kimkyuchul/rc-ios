@@ -7,6 +7,7 @@
 
 import UIKit
 import KakaoSDKCommon
+import NaverThirdPartyLogin
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        //kakao SDK 초기화
         KakaoSDK.initSDK(appKey: "4e3e418879800e59bdc4c624c338c749")
+        
+        //Naver SDK 초기화
+        NaverThirdPartyLoginConnection.getSharedInstance().isInAppOauthEnable = true
+        NaverThirdPartyLoginConnection.getSharedInstance().isNaverAppOauthEnable = true
+        
+        let instance = NaverThirdPartyLoginConnection.getSharedInstance()
+        instance?.isNaverAppOauthEnable = true
+        instance?.isInAppOauthEnable = true
+        
+        //아래 설정을 위해서 NaverThirdPartyConstantForApp.h 파일로 이동
+        instance?.serviceUrlScheme = kServiceAppUrlScheme
+        instance?.consumerKey = kConsumerKey
+        instance?.consumerSecret = kConsumerSecret
+        instance?.appName = kServiceAppName
+
         
         return true
     }
