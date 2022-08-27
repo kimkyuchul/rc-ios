@@ -75,3 +75,5 @@
 - NaverLogin (https://developers.naver.com/docs/login/ios/ios.md)
 - 네이버 로그인 샘플 앱 (https://github.com/naver/naveridlogin-sdk-ios)
 - SnapKit & Then도 맛봐봄
+- 참고한 네아로 구현 블로그 (https://bmwe3.tistory.com/1767, https://www.zehye.kr/ios/2021/09/30/iOS_social_login/)
+- 참고한 카카오 로그인 구현 블로그 (https://sujinnaljin.medium.com/ios-%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1-%EC%86%8C%EC%85%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-58a525e6f219)
