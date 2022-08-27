@@ -32,7 +32,11 @@
 
 #### ▶︎ 회고
 
-- Realm DB와 TableView를 함께 활용하여 만드니 CRUD 구현이 편했다.
+- Realm DB와 TableView를 함께 활용하여 만드니 CRUD 구현이 편했다. (https://www.mongodb.com/docs/realm/sdk/swift/crud)
+- TableView Multi Section 참고 (https://velog.io/@din0121/Swift-Table-View-Multi-Section)
+- 모달 하프 스크린 (https://stackoverflow.com/questions/42106980/how-to-present-a-viewcontroller-on-half-screen)
+- - [애플 메모 로직 구현](https://medium.com/@kyuchul2/swift-split-components-9fa08acf2dd9)
+
 
 <br></br>
 -------------------------------------------------------
