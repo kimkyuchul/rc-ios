@@ -44,7 +44,7 @@
 ### 3. 'How much do you know about Kyu-Chul Kim?' Quiz Game
 [링크](https://github.com/kimkyuchul/rc-ios/tree/main/KyuchulQuiz)
 
-**'How much do you know about Kyu-Chul Kim?' iOS CollectionView & URLSession & UserDefault**
+**`How much do you know about Kyu-Chul Kim?` iOS CollectionView & URLSession & UserDefault**
 
 #### ▶︎ 게임로직
 <img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/KyuchulQuiz.gif" width="45%"/>
@@ -56,7 +56,7 @@
 
 - gist.github를 통해 json 파일을 만들어 URLSession으로 퀴즈 데이터 통신
 - CollectionView를 통해 퀴즈 정답 선택 뷰 구현 -> xib없이 구현해서 많이 복잡해짐 다음에는 cell를 따로 만들어서 ReusableCell 하여 만들자
-- UserDefault를 활용해 점수와 이름을 딕셔너리 형태로 저장하여 랭크 시스템을 구현 (hhttps://cocoacasts.com/ud-12-benefits-of-creating-an-extension-for-user-defaults)
+- UserDefault를 활용해 점수와 이름을 딕셔너리 형태로 저장하여 랭크 시스템을 구현 (https://cocoacasts.com/ud-12-benefits-of-creating-an-extension-for-user-defaults)
 - UserDefault가 잘 저장되는지 확인하면서 구현해봄(https://yerang.kim/swift/[swift]-userdefaults는-어디에-저장될까/)
 
 <br></br>
@@ -64,7 +64,7 @@
 ### 4. Social Login (KaKao & Naver)
 [링크](https://github.com/kimkyuchul/rc-ios/tree/main/Social\Login/)
 
-**'Social Login' iOS KaKao Login & Naver Login**
+**`Social Login` iOS KaKao Login & Naver Login**
 
 #### ▶︎ 실행화면
 <img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/SocialLogin.gif" width="51%"/>
