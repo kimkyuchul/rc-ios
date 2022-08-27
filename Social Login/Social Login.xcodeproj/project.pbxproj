@@ -53,6 +53,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		690DDCA828BA41F600C278E1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				69C9567428B66EAE00659534 /* AppDelegate.swift */,
+				69C9567628B66EAE00659534 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		690DDCA928BA421D00C278E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69C9567D28B66EB100659534 /* Assets.xcassets */,
+				69C9567F28B66EB100659534 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		69C9566828B66EAE00659534 = {
 			isa = PBXGroup;
 			children = (
@@ -74,13 +92,11 @@
 		69C9567328B66EAE00659534 /* Social Login */ = {
 			isa = PBXGroup;
 			children = (
-				69C9567428B66EAE00659534 /* AppDelegate.swift */,
-				69C9567628B66EAE00659534 /* SceneDelegate.swift */,
+				690DDCA928BA421D00C278E1 /* Supporting Files */,
+				690DDCA828BA41F600C278E1 /* Application */,
 				69C9567828B66EAE00659534 /* ViewController.swift */,
 				690DDCA428B8D1D600C278E1 /* LogoutViewController.swift */,
 				690DDCA628B9F1B300C278E1 /* UserDefaultInfo.swift */,
-				69C9567D28B66EB100659534 /* Assets.xcassets */,
-				69C9567F28B66EB100659534 /* LaunchScreen.storyboard */,
 				69C9568228B66EB100659534 /* Info.plist */,
 			);
 			path = "Social Login";
