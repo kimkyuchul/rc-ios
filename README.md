@@ -29,15 +29,49 @@
 
 #### ▶︎ 실행화면
 <img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/AppleMemo.gif" width="51%"/>
-
+ (
 #### ▶︎ 회고
 
 - Realm DB와 TableView를 함께 활용하여 만드니 CRUD 구현이 편했다. (https://www.mongodb.com/docs/realm/sdk/swift/crud)
 - TableView Multi Section 참고 (https://velog.io/@din0121/Swift-Table-View-Multi-Section)
 - 모달 하프 스크린 (https://stackoverflow.com/questions/42106980/how-to-present-a-viewcontroller-on-half-screen)
+- nstance member 'dateFommatterUse' cannot be used on type 'DateFormatter'; did you mean to use a value of this type instead? -> 타입 메서드에는 static (https://nebori.tistory.com/38)
 - [애플 메모 로직 구현](https://medium.com/@kyuchul2/swift-split-components-9fa08acf2dd9)
 
 
 <br></br>
 -------------------------------------------------------
-### 3. "How much do you know about Kyu-Chul Kim?" Quiz Game 
+### 3. 'How much do you know about Kyu-Chul Kim?' Quiz Game
+[링크](https://github.com/kimkyuchul/rc-ios/tree/main/KyuchulQuiz)
+
+** 'How much do you know about Kyu-Chul Kim?' iOS CollectionView & URLSession & UserDefault **
+
+#### ▶︎ 게임로직
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/KyuchulQuiz.gif" width="51%"/>
+
+#### ▶︎ 랭크시스템
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/KyuchulQuiz-RankSystem.gif" width="51%"/>
+
+#### ▶︎ 회고
+
+- gist.github를 통해 json 파일을 만들어 URLSession으로 퀴즈 데이터 통신
+- CollectionView를 통해 퀴즈 정답 선택 뷰 구현 -> xib없이 구현해서 많이 복잡해짐 다음에는 cell를 따로 만들어서 ReusableCell 하여 만들자
+- UserDefault를 활용해 점수와 이름을 딕셔너리 형태로 저장하여 랭크 시스템을 구현 (hhttps://cocoacasts.com/ud-12-benefits-of-creating-an-extension-for-user-defaults)
+- UserDefault가 잘 저장되는지 확인하면서 구현해봄(https://yerang.kim/swift/[swift]-userdefaults는-어디에-저장될까/)
+
+<br></br>
+-------------------------------------------------------
+### 4. Social Login (KaKao & Naver)
+[링크](https://github.com/kimkyuchul/rc-ios/tree/main/Social Login/)
+
+** 'Social Login' iOS KaKao Login & Naver Login **
+
+#### ▶︎ 실행화면
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/SocialLogin.gif" width="51%"/>
+
+#### ▶︎ 회고
+
+- KaKaoLogin (https://developers.kakao.com/docs/latest/ko/kakaologin/ios/)
+- NaverLogin (https://developers.naver.com/docs/login/ios/ios.md)
+- 네이버 로그인 샘플 앱 (https://github.com/naver/naveridlogin-sdk-ios)
+- SnapKit & Then도 맛봐봄
