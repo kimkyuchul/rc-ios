@@ -22,25 +22,6 @@
 
 <br></br>
 -------------------------------------------------------
-### 2.  Apple Memo App Clone 
-[링크](https://github.com/kimkyuchul/rc-ios/tree/main/AppleMemo)
-
-**`Apple Memo` iOS TableView & Realm**
-
-#### ▶︎ 실행화면
-<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/AppleMemo.gif" width="51%"/>
- (
-#### ▶︎ 회고
-
-- Realm DB와 TableView를 함께 활용하여 만드니 CRUD 구현이 편했다. (https://www.mongodb.com/docs/realm/sdk/swift/crud)
-- TableView Multi Section 참고 (https://velog.io/@din0121/Swift-Table-View-Multi-Section)
-- 모달 하프 스크린 (https://stackoverflow.com/questions/42106980/how-to-present-a-viewcontroller-on-half-screen)
-- nstance member 'dateFommatterUse' cannot be used on type 'DateFormatter'; did you mean to use a value of this type instead? -> 타입 메서드에는 static (https://nebori.tistory.com/38)
-- [애플 메모 로직 구현](https://medium.com/@kyuchul2/swift-split-components-9fa08acf2dd9)
-
-
-<br></br>
--------------------------------------------------------
 ### 3. 'How much do you know about Kyu-Chul Kim?' Quiz Game
 [링크](https://github.com/kimkyuchul/rc-ios/tree/main/KyuchulQuiz)
 
