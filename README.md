@@ -32,7 +32,7 @@
 
 ### ▶︎ 실행화면
 
-<img src="[https://github.com/kimkyuchul/rc-ios/blob/main/GIF/AppleMemo.gif](https://github.com/kimkyuchul/rc-ios/blob/main/GIF/AppleMemo.gif)" width="51%"/>
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/AppleMemo.gif" width="51%"/>
 
 ### ▶︎ 회고
 
