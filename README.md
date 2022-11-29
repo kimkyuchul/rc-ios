@@ -8,7 +8,7 @@
 
 ### ▶︎ 실행화면
 
-<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/SoundCloud.gif" width="45%"/>
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/SoundCloud.gif" width="40%"/>
 
 ### ▶︎ 회고
 
