@@ -8,7 +8,7 @@
 
 ### ▶︎ 실행화면
 
-<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/SoundCloud.gif" width="40%"/>
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/SoundCloud.gif" width="38%"/>
 
 ### ▶︎ 회고
 
@@ -32,7 +32,7 @@
 
 ### ▶︎ 실행화면
 
-<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/AppleMemo.gif" width="45%"/>
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/AppleMemo.gif" width="38%"/>
 
 ### ▶︎ 회고
 
@@ -52,11 +52,11 @@
 
 ### ▶︎ 게임로직
 
-<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/KyuchulQuiz.gif" width="45%"/>
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/KyuchulQuiz.gif" width="38%"/>
 
 ### ▶︎ 랭크시스템
 
-<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/KyuchulQuiz-RankSystem.gif" width="45%"/>
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/KyuchulQuiz-RankSystem.gif" width="38%"/>
 
 ### ▶︎ 회고
 
@@ -75,7 +75,7 @@
 
 ### ▶︎ 실행화면
 
-<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/SocialLogin.gif" width="51%"/>
+<img src="https://github.com/kimkyuchul/rc-ios/blob/main/GIF/SocialLogin.gif" width="38%"/>
 
 ### ▶︎ 회고
 
